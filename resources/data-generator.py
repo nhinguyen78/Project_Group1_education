@@ -58,7 +58,40 @@ def create_csv_file_Transaction_Info():
                     
                 }
 )
+            
+dir_path = os.path.dirname(os.path.abspath(__file__))
+
+DimCourse = f'{dir_path}\\workingFolder\\DimCourse.csv'
+DimInstructor = f'{dir_path}\\workingFolder\\DimInstructor.csv'
+DimStudent = f'{dir_path}\\workingFolder\\DimStudent.csv'
+FactTransaction = f'{dir_path}\\workingFolder\\FactTransaction.csv'
+ 
+def create_empty_table():
+    with open(DimCourse, 'w', newline='') as WorkingFolder:
+        fieldnames = ['Course_ID','Course_Name']
+        writer = csv.DictWriter(WorkingFolder, fieldnames=fieldnames)
+        writer.writeheader()
+ 
+    with open(DimInstructor, 'w', newline='') as WorkingFolder:
+        fieldnames = ['Instructor_ID','Instructor_Name','Instructor_rank', 'Ranked_change']
+        writer = csv.DictWriter(WorkingFolder, fieldnames=fieldnames)
+        writer.writeheader() 
+ 
+    with open(DimStudent, 'w', newline='') as WorkingFolder:
+        fieldnames = ['Student_ID', 'Student_Name', 'Email', 'Date_of_birth', 'Gender', 'StartDate', 'EndDate']
+        writer = csv.DictWriter(WorkingFolder, fieldnames=fieldnames)
+        writer.writeheader()
+ 
+    with open(FactTransaction, 'w', newline='') as WorkingFolder:
+        fieldnames = ['Transaction_ID', 'Instructor_ID', 'Student_ID', 'Course_Name', 'Rating_class',
+        'Class_recommendation', 'Final_Score', 'Instructor_rating', 'Registered_date']
+        writer = csv.DictWriter(WorkingFolder, fieldnames=fieldnames)
+        writer.writeheader()
+              
 
 if __name__ == '__main__':
-    print('Creating a fake data...')
-    create_csv_file_Transaction_Info()
+    t1 = datetime.now()
+    print('Creating data...')
+    create_empty_table()
+    t2 = datetime.now()
+    print(f"Done in time {t2-t1}")
