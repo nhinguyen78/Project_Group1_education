@@ -34,3 +34,6 @@ Password: Password@1
 
 Use for trainer 2: mainq2
 Password: Password@1
+
+4. Link to PowerBI Visualization
+Please click [here!](https://app.powerbi.com/links/7ReXjH56Kp?ctid=f01e930a-b52e-42b1-b70f-a8882b5d043b&pbi_source=linkShare)
