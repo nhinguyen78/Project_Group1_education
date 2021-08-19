@@ -31,7 +31,6 @@ Please click [Snowflake](https://ob27530.southeast-asia.azure.snowflakecomputing
 
 User for trainer 1: longbv1
 Password: Password@1
-
 Use for trainer 2: mainq2
 Password: Password@1
 
