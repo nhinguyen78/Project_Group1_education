@@ -27,7 +27,7 @@ How to setup
 1. Use the raw data in raw-code
 2. Login MSSQL and run the script
 3. Authen Snowflake and run
-https://ob27530.southeast-asia.azure.snowflakecomputing.com/
+Please click [Snowflake](https://ob27530.southeast-asia.azure.snowflakecomputing.com/)
 
 User for trainer 1: longbv1
 Password: Password@1
@@ -36,4 +36,4 @@ Use for trainer 2: mainq2
 Password: Password@1
 
 4. Link to PowerBI Visualization
-Please click [here!](https://app.powerbi.com/links/7ReXjH56Kp?ctid=f01e930a-b52e-42b1-b70f-a8882b5d043b&pbi_source=linkShare)
+Please click [PowerBI](https://app.powerbi.com/links/7ReXjH56Kp?ctid=f01e930a-b52e-42b1-b70f-a8882b5d043b&pbi_source=linkShare)
