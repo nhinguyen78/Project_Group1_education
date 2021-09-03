@@ -81,7 +81,7 @@ where Transaction_ID ='10022'
 
 --Create Eror Logs table
 Use EducationData
-Go
+Go;
 
 IF EXISTS(SELECT 1 FROM sysobjects with (nolock) where ID = OBJECT_ID(N'Error_Logs') AND type = (N'U'))
 drop table Error_Logs
@@ -93,6 +93,6 @@ go
 
 insert into Error_Logs values ('(local)', 'MyPackage.dtsx', 'MyDFT', 102,'Unable to locate file', getdate())
 
-select * from Error_Logs
+select * from Error_Logs;
 
 	
