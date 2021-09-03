@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="237"
-  DTS:VersionGUID="{D490F3B0-1D6D-4876-B983-7CE282E676F0}">
+  DTS:VersionBuild="238"
+  DTS:VersionGUID="{79FA1AC7-1E87-4EB7-9EEB-3C05DB66C772}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -158,6 +158,26 @@
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
       DTS:DTSID="{CB32CC20-ED01-4365-80DD-92811620389E}"
       DTS:ObjectName="DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-5EO5NDK\MSSQLSERVER01;Initial Catalog=EducationData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{1F15568B-EA14-479B-B174-5255023DCC4D}"
+      DTS:ObjectName="DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-5EO5NDK\MSSQLSERVER01;Initial Catalog=EducationData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FACF3404-A84C-4063-93CA-FBBD476C375C}"
+      DTS:ObjectName="DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData 3">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=DESKTOP-5EO5NDK\MSSQLSERVER01;Initial Catalog=EducationData;Integrated Security=True;" />
@@ -974,6 +994,15 @@ Dev Team</DTS:VariableValue>
       <DTS:VariableValue
         DTS:DataType="8">hank072097@gmail.com</DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{ABA19EAD-1FCF-4BE3-A6AA-52A2B2B41959}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:LoggingOptions
     DTS:FilterKind="0"
@@ -1369,7 +1398,7 @@ Dev Team</DTS:VariableValue>
       DTS:refId="Package\Data Profiling Task"
       DTS:CreationName="Microsoft.DataProfilingTask"
       DTS:Description="Data Profiling Task"
-      DTS:DTSID="{AC8D1DDB-263E-4562-873A-2075C40673D8}"
+      DTS:DTSID="{6891EAE0-70E4-43A2-828E-9C1EF705B3DA}"
       DTS:ExecutableType="Microsoft.DataProfilingTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Profiling Task"
@@ -1389,31 +1418,31 @@ Dev Team</DTS:VariableValue>
     <Timeout>0</Timeout>
     <Requests>
       <ColumnNullRatioProfileRequest ID="NullRatioReq">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimCourse" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimCourse" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimCourse" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimCourse" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimCourse" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1424,31 +1453,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq1">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimInstructor" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq1">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimInstructor" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimInstructor" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimInstructor" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq1">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimInstructor" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1459,31 +1488,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq2">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimStudent" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq2">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimStudent" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimStudent" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimStudent" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq2">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="DimStudent" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1494,31 +1523,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq3">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="Error_Logs" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq3">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="Error_Logs" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq3">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="Error_Logs" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq3">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="Error_Logs" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq3">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="Error_Logs" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1529,31 +1558,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq4">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransaction" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq4">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransaction" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq4">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransaction" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq4">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransaction" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq4">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransaction" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1564,31 +1593,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq5">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransactionClone" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq5">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransactionClone" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq5">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransactionClone" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq5">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransactionClone" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq5">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="FactTransactionClone" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -1599,32 +1628,32 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq6">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="sysdiagrams" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq6">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="sysdiagrams" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq6">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="sysdiagrams" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq6">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="sysdiagrams" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq6">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="sysdiagrams" />
         <KeyColumns>
           <Column IsWildCard="true" />
         </KeyColumns>
@@ -1634,101 +1663,31 @@ Dev Team</DTS:VariableValue>
         <MaxNumberOfViolations>100</MaxNumberOfViolations>
       </CandidateKeyProfileRequest>
       <ColumnNullRatioProfileRequest ID="NullRatioReq7">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination1" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
         <Column IsWildCard="true" />
       </ColumnNullRatioProfileRequest>
       <ColumnStatisticsProfileRequest ID="StatisticsReq7">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination1" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
         <Column IsWildCard="true" />
       </ColumnStatisticsProfileRequest>
       <ColumnLengthDistributionProfileRequest ID="LengthDistReq7">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination1" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
         <Column IsWildCard="true" />
         <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
         <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
       </ColumnLengthDistributionProfileRequest>
       <ColumnValueDistributionProfileRequest ID="ValueDistReq7">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination1" />
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
         <Column IsWildCard="true" />
         <Option>FrequentValues</Option>
         <FrequentValueThreshold>0.001</FrequentValueThreshold>
       </ColumnValueDistributionProfileRequest>
       <CandidateKeyProfileRequest ID="KeyReq7">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="OLE DB Destination1" />
-        <KeyColumns>
-          <Column IsWildCard="true" />
-        </KeyColumns>
-        <ThresholdSetting>Specified</ThresholdSetting>
-        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
-        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
-        <MaxNumberOfViolations>100</MaxNumberOfViolations>
-      </CandidateKeyProfileRequest>
-      <ColumnNullRatioProfileRequest ID="NullRatioReq8">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="sysdiagrams" />
-        <Column IsWildCard="true" />
-      </ColumnNullRatioProfileRequest>
-      <ColumnStatisticsProfileRequest ID="StatisticsReq8">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="sysdiagrams" />
-        <Column IsWildCard="true" />
-      </ColumnStatisticsProfileRequest>
-      <ColumnLengthDistributionProfileRequest ID="LengthDistReq8">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="sysdiagrams" />
-        <Column IsWildCard="true" />
-        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
-        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
-      </ColumnLengthDistributionProfileRequest>
-      <ColumnValueDistributionProfileRequest ID="ValueDistReq8">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="sysdiagrams" />
-        <Column IsWildCard="true" />
-        <Option>FrequentValues</Option>
-        <FrequentValueThreshold>0.001</FrequentValueThreshold>
-      </ColumnValueDistributionProfileRequest>
-      <CandidateKeyProfileRequest ID="KeyReq8">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="sysdiagrams" />
-        <KeyColumns>
-          <Column IsWildCard="true" />
-        </KeyColumns>
-        <ThresholdSetting>Specified</ThresholdSetting>
-        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
-        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
-        <MaxNumberOfViolations>100</MaxNumberOfViolations>
-      </CandidateKeyProfileRequest>
-      <ColumnNullRatioProfileRequest ID="NullRatioReq9">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="TransactionData" />
-        <Column IsWildCard="true" />
-      </ColumnNullRatioProfileRequest>
-      <ColumnStatisticsProfileRequest ID="StatisticsReq9">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="TransactionData" />
-        <Column IsWildCard="true" />
-      </ColumnStatisticsProfileRequest>
-      <ColumnLengthDistributionProfileRequest ID="LengthDistReq9">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="TransactionData" />
-        <Column IsWildCard="true" />
-        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
-        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
-      </ColumnLengthDistributionProfileRequest>
-      <ColumnValueDistributionProfileRequest ID="ValueDistReq9">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
-        <Table Schema="dbo" Table="TransactionData" />
-        <Column IsWildCard="true" />
-        <Option>FrequentValues</Option>
-        <FrequentValueThreshold>0.001</FrequentValueThreshold>
-      </ColumnValueDistributionProfileRequest>
-      <CandidateKeyProfileRequest ID="KeyReq9">
-        <DataSourceID>{CB32CC20-ED01-4365-80DD-92811620389E}</DataSourceID>
+        <DataSourceID>{FACF3404-A84C-4063-93CA-FBBD476C375C}</DataSourceID>
         <Table Schema="dbo" Table="TransactionData" />
         <KeyColumns>
           <Column IsWildCard="true" />
@@ -13209,7 +13168,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="172,42"
           Id="Package\Data Profiling Task"
-          TopLeft="39,168" />
+          TopLeft="48,171" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
