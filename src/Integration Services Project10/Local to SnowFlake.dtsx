@@ -11,431 +11,10 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{1CD82CF3-BAA9-4D16-B351-AC7E883E1C92}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{2119D00F-5E7E-481B-B7F5-E4638F8D5489}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CSVOutput_Fact]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{94513929-DA10-4B2B-94C1-316416356112}"
-      DTS:ObjectName="CSVOutput_Fact">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\FactTransaction.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Transaction_ID"
-              DTS:DTSID="{389A0D4F-31FC-4660-AFA0-A7D7E23A7F55}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_ID"
-              DTS:DTSID="{8F4DA89B-01B2-4366-9E91-A0EFEC4D16F5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Student_ID"
-              DTS:DTSID="{52CD1305-18DE-4035-AB05-FF427CD23327}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Rating_class"
-              DTS:DTSID="{6FD29CA2-D8FF-4C3D-96AF-D981AD51BDA1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Class_recommendation"
-              DTS:DTSID="{F4A2469E-9B81-4073-85BA-D0C9BEA2EF45}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Final_Score"
-              DTS:DTSID="{75C43064-C416-41C0-9516-34FDA812BBA9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_rating"
-              DTS:DTSID="{7343B3AC-8DDD-444D-89CD-4F5432C05DE0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Registered_date"
-              DTS:DTSID="{E81A7E81-D9B6-445F-AF53-E0FBA7A8361C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_ID"
-              DTS:DTSID="{51187D6F-318D-4CC0-93D0-A152A44CE3CA}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CSVOutPut_Student]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B276FA79-DDF5-4F32-8A7B-CE67C0A455EB}"
-      DTS:ObjectName="CSVOutPut_Student">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\DimStudent.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Student_ID"
-              DTS:DTSID="{7BFF7156-5397-435D-A3BB-09E502926246}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Student_Name"
-              DTS:DTSID="{22666589-3838-4BC0-9EBD-D99949F7105A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Email"
-              DTS:DTSID="{3CB743FB-C848-458C-AAB5-77D1E5CE8684}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Date_of_birth"
-              DTS:DTSID="{5E55CC30-81E9-4C6E-AC9C-6B5D666C9C47}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Gender"
-              DTS:DTSID="{9829AEB2-6494-4983-AC2A-BA74F110718C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="StartDate"
-              DTS:DTSID="{C77576F0-C480-41CE-97CD-A30B758867E1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="135"
-              DTS:TextQualified="True"
-              DTS:ObjectName="EndDate"
-              DTS:DTSID="{CF21957C-5A47-4837-82FB-802B47C47207}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Rating_class"
-              DTS:DTSID="{AAA2145C-7739-41A0-8B4C-6FEDEE3CD3D3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Class_recommendation"
-              DTS:DTSID="{656955F4-71AF-475D-B35A-4F4AFCC77969}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Final_score"
-              DTS:DTSID="{87BDBEF1-4F44-4569-A52A-68A4A8B23465}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_rating"
-              DTS:DTSID="{F3679901-BCC9-4621-8C82-84E1E7BB4F1C}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{F22B395C-8644-48D3-B664-207D99A12A4B}"
-      DTS:ObjectName="DESKTOP-LONCI57.EducationData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-LONCI57;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-LONCI57\SQLEXPRESS.EducationData]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{E5F5261B-0B50-4107-BCBF-BE72B5AE0E7F}"
-      DTS:ObjectName="DESKTOP-LONCI57\SQLEXPRESS.EducationData">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-LONCI57\SQLEXPRESS;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DESKTOP-LONCI57\SQLEXPRESS.EducationData 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{7C3EC49E-9D39-47C2-A2C8-8CD52FF17336}"
-      DTS:ObjectName="DESKTOP-LONCI57\SQLEXPRESS.EducationData 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-LONCI57\SQLEXPRESS;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[dw.hank0720]"
-      DTS:CreationName="ODBC"
-      DTS:DTSID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}"
-      DTS:ObjectName="dw.hank0720">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="uid=hank0720;Dsn=dw;">
-          <DTS:Password
-            DTS:Name="pwd"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXRDRj3j3Eyim/gdkIvGZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADNEuRjOJMg9ks9gBrzrdcDp/Annzm8KPqKwF+nnfWVqgAAAAAOgAAAAAIAACAAAAClY+6TC9SoF0Kmufdpmbc4d5Ca0SFIPd9WuOkoYfgVdyAAAACIcRdr3VwyItsIFsQJW8+Oi8GFAuM229zKch5w2RjiWkAAAADrt7BaxSVnLUWvvFnb39GV456rMZ52l49LwfV+fjq/9JinCsdWyTO1KGhtblcBzOSqpdjQgRch0PryTkGXm0pl</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Fact]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{F08BF895-F53A-4D49-A992-26BE0613AE82}"
-      DTS:ObjectName="Fact">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\FactTransaction.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_ID"
-              DTS:DTSID="{E966D772-2B02-4D73-8BEB-9BFAFE873E0C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Transaction_ID"
-              DTS:DTSID="{9006B79E-11E0-4F22-94D0-2112FC2BF643}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_Name"
-              DTS:DTSID="{2D94168F-C67D-4771-A4F3-B545C1798A87}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Rating_class"
-              DTS:DTSID="{0ED52BA7-C29A-467A-ACE9-5A081FFD7382}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Class_recommendation"
-              DTS:DTSID="{53324677-FD04-4602-AAD0-48E05929C453}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Final_Score"
-              DTS:DTSID="{15F95759-7743-404F-B341-83DE2B998C61}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_rating"
-              DTS:DTSID="{6317C71E-0E70-40A3-BA98-159D90B643DB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Registered_date"
-              DTS:DTSID="{18314A3F-A160-4C3B-9F0C-35B6812F49F2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_ID"
-              DTS:DTSID="{4F95A8A3-9B42-4504-B2B2-4524A446517F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Student_ID"
-              DTS:DTSID="{61C0075E-F566-40E4-A0C8-F418ABE24E03}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{9B1B904D-0D93-4A30-96FC-66FD41509C15}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\DimCourse.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_ID"
-              DTS:DTSID="{0FC64D41-8EE0-43E7-B67B-8A7F00AACFCB}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_Name"
-              DTS:DTSID="{E484722D-902D-4A7B-BE04-BE14D4862611}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[s1.hank0720 2]"
-      DTS:CreationName="ODBC"
-      DTS:DTSID="{BEB4B230-27D0-49FF-A3DD-6744AE29069D}"
-      DTS:ObjectName="s1.hank0720 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="uid=hank0720;Dsn=s1;">
-          <DTS:Password
-            DTS:Name="pwd"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXRDRj3j3Eyim/gdkIvGZQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA85f6741txkFVUjvengeuCyqJVgU8NaaQ9uUkG94TC1QAAAAAOgAAAAAIAACAAAADwsdOdgEQWFVB7KNwvyNmn57ZzdkRHROGrIIwYc588XyAAAAA4SzfP6id56MYZ+ZxbNABP0J6d1inazkH/AK2FxLRWqUAAAABRgKJbKbynOgNcS57JEknqzD2srIiVPDo7u+ZlaQSOHjnfurx2ulkUW/1f55l+Lp7XvJWnUQ4O5Fk+IPgf48FF</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -524,7 +103,6 @@
       DTS:refId="Package\Load Data to Snowflake"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{E5D6A020-9F8B-4E6E-BB00-61C121DF5C7F}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -723,8 +301,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\DimCouse.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
+                      connectionManagerID="{440174A1-A660-4D47-878C-83692544148D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -860,8 +438,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -1325,8 +903,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -1463,8 +1041,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[s1.hank0720 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[s1.hank0720 2]"
+                      connectionManagerID="{BEB4B230-27D0-49FF-A3DD-6744AE29069D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[s1.hank0720 2]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -1767,8 +1345,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\DimInstructor.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
+                      connectionManagerID="{440174A1-A660-4D47-878C-83692544148D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -1904,8 +1482,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -2369,8 +1947,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -2507,8 +2085,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[s1.hank0720 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[s1.hank0720 2]"
+                      connectionManagerID="{BEB4B230-27D0-49FF-A3DD-6744AE29069D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[s1.hank0720 2]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -2811,8 +2389,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\DimStudent.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
-                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
+                      connectionManagerID="{440174A1-A660-4D47-878C-83692544148D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
@@ -3152,8 +2730,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -4509,8 +4087,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[dw.hank0720]"
-                      connectionManagerRefId="Package.ConnectionManagers[dw.hank0720]"
+                      connectionManagerID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[dw.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -4839,8 +4417,8 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="Package.ConnectionManagers[s1.hank0720 2]"
-                      connectionManagerRefId="Package.ConnectionManagers[s1.hank0720 2]"
+                      connectionManagerID="{BEB4B230-27D0-49FF-A3DD-6744AE29069D}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[s1.hank0720 2]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
                   </connections>
@@ -5138,8 +4716,8 @@
               <connections>
                 <connection
                   refId="Package\Loading Fact\Fact Table.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
-                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
+                  connectionManagerID="{440174A1-A660-4D47-878C-83692544148D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5417,8 +4995,8 @@
               <connections>
                 <connection
                   refId="Package\Loading Fact\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Fact]"
-                  connectionManagerRefId="Package.ConnectionManagers[Fact]"
+                  connectionManagerID="{94513929-DA10-4B2B-94C1-316416356112}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CSVOutput_Fact]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -5439,14 +5017,6 @@
                       cachedName="Transaction_ID"
                       externalMetadataColumnId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Transaction_ID]"
                       lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Transaction_ID]" />
-                    <inputColumn
-                      refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].Columns[Course_Name]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Course_Name"
-                      externalMetadataColumnId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Course_Name]"
-                      lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Course_Name]" />
                     <inputColumn
                       refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].Columns[Rating_class]"
                       cachedCodepage="1252"
@@ -5511,16 +5081,8 @@
                       dataType="i4"
                       name="Transaction_ID" />
                     <externalMetadataColumn
-                      refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Course_Name]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Course_Name" />
-                    <externalMetadataColumn
                       refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Rating_class]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i4"
                       name="Rating_class" />
                     <externalMetadataColumn
                       refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Class_recommendation]"
@@ -5697,7 +5259,7 @@
         <NodeLayout
           Size="200,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse\Source Course Snowflake"
-          TopLeft="532.142857142857,84.5" />
+          TopLeft="530.714285714286,84.5" />
         <NodeLayout
           Size="98.5,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse\Sort"
@@ -5708,7 +5270,7 @@
           TopLeft="581.142857142857,197" />
         <EdgeLayout
           Id="Package\Load Data to Snowflake\Loading DimCourse.Paths[ODBC Source Output]"
-          TopLeft="633.392857142857,126.5">
+          TopLeft="632.678571428571,126.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
