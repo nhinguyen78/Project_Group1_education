@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="dw.hank0720"
+  DTS:DTSID="{5E5C78D5-3D26-417D-A0BF-9BCC43BB8AC8}"
+  DTS:CreationName="ODBC">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::ConnectionSnowDW]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=hank0720;Dsn=dw;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
