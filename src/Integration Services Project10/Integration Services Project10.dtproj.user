@@ -8,8 +8,8 @@
         <UseWinAuth>false</UseWinAuth>
         <WinAuthUserName />
         <WinAuthDomain />
-        <ServerName>DESKTOP-5EO5NDK\MSSQLSERVER01</ServerName>
-        <PathOnServer>/SSISDB/EducationDeploy/Integration Services Project10</PathOnServer>
+        <ServerName />
+        <PathOnServer />
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CourseAudit"
+  DTS:DTSID="{97BA57DB-9F32-4765-9392-535DC4F4E339}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::CourseAudit]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\CourseAudit.txt">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Course_Name"
+          DTS:DTSID="{ED617820-7C6A-4FE9-84C7-ACBE8F0400BB}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Execution instance GUID"
+          DTS:DTSID="{0105AECF-05CE-42E2-9207-A3E98F986860}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Package ID"
+          DTS:DTSID="{2EB39392-34D5-4FCF-99F2-3A3FAC3800BC}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Package name"
+          DTS:DTSID="{FC876255-E264-4847-A894-7395F913368B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Version ID"
+          DTS:DTSID="{721DBB8E-2990-4C13-BA3B-AD6A61431160}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="7"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Execution start time"
+          DTS:DTSID="{0841E026-47B0-42AF-A596-26ECD8CAECAA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="15"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Machine name"
+          DTS:DTSID="{663E7F87-E0EB-4F34-AF2E-105598A1A8AD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="User name"
+          DTS:DTSID="{69461D4B-278A-4312-9CE6-6595EFD9E56D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="User name (1)"
+          DTS:DTSID="{3514FAAC-8D30-461E-8467-38D5C2D67099}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Task ID"
+          DTS:DTSID="{52C5AABB-AD83-4CC2-A08A-A59FE232902B}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
