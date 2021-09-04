@@ -26,18 +26,30 @@ drag and drop for overwrite )
 -  Connection: 
 	* Snowflake: Stagging and DW House 
 	* MSSQL connection 
-- Audit file: 
+- Audit Files: 
 	* CourseAudit
 	* InstructorAudit
 	* StudentAudit
 	* TransactionAudit
 	* FactTransactionAudit
-- CSV File:
+- CSV Files:
 	* CSV_OutputFact : file CSV of FactTransaction
 	* RawData: Orginal Data file  
-- DataLog: 
-
- **Varaible in Package: Load to Snowflake:**
- - Executetable: `C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe` which is locate python.exe 
+- Data Info Files: 
+	* DataLog
+	* DataProfiling
+	
+ **Variables in Package: Main Package & Load to Snowflake:**
+ - SMTPUsername: Create gmail username
+ - SMTPPassword: Create gmail password
+ - SMTPServer: Connect smtp by using gmail
+ - SMTPPort: Gmail port
+ - From: Create sending user
+ - To: Create sending to user
+ - Subject: Message Subjects
+ - MessageBody: Create Message with Error to user
+ 
+ **Variables in Package: Load to Snowflake:**
+- Executetable: `C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe` which is locate python.exe 
 - PythonScript : `main.py`
 - WorkingDirectory: Locate main.py,  for instance in this repo [Rest API](https://github.com/nhinguyen78/Project_Group1_education/tree/Group02/src/Rest%20API "Rest API")
