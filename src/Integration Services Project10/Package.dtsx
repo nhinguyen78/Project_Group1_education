@@ -11,10 +11,29 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
+<<<<<<< Updated upstream
   DTS:VersionBuild="251"
   DTS:VersionGUID="{5C8FBB44-1592-4366-A119-1F184826FA03}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+=======
+  DTS:VersionBuild="258"
+  DTS:VersionGUID="{A9AB35A6-12F6-4BA3-9D41-A862B4D72876}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}"
+      DTS:ObjectName="DESKTOP-LONCI57.EducationData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-LONCI57;Initial Catalog=EducationData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+>>>>>>> Stashed changes
   <DTS:LogProviders>
     <DTS:LogProvider
       DTS:ConfigString="DataLog.txt"
@@ -513,6 +532,251 @@ Dev Team</DTS:VariableValue>
     </DTS:SelectedLogProviders>
   </DTS:LoggingOptions>
   <DTS:Executables>
+<<<<<<< Updated upstream
+=======
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Task"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{7BED5720-A0DA-46A4-AD6B-D3289B209B3A}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="Data Profiling.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq3">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="Error_Logs" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq3">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="Error_Logs" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq3">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="Error_Logs" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq3">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="Error_Logs" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq3">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="Error_Logs" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq4">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq4">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq4">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq4">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq4">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq5">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq5">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq5">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq5">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq5">
+        <DataSourceID>{66FA2BB4-3657-43A9-8C85-A1767DCB77E5}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+>>>>>>> Stashed changes
     <DTS:Executable
       DTS:refId="Package\Fact Transaction"
       DTS:CreationName="Microsoft.Pipeline"
@@ -603,7 +867,11 @@ Dev Team</DTS:VariableValue>
               <connections>
                 <connection
                   refId="Package\Fact Transaction\Dim Course.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                   connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -733,7 +1001,11 @@ Dev Team</DTS:VariableValue>
               <connections>
                 <connection
                   refId="Package\Fact Transaction\DIm Instructor.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                   connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -863,7 +1135,11 @@ Dev Team</DTS:VariableValue>
               <connections>
                 <connection
                   refId="Package\Fact Transaction\Dim Student.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                   connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1197,7 +1473,11 @@ Dev Team</DTS:VariableValue>
               <connections>
                 <connection
                   refId="Package\Fact Transaction\Dim Transaction.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                   connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -1656,7 +1936,11 @@ Dev Team</DTS:VariableValue>
               <connections>
                 <connection
                   refId="Package\Fact Transaction\Fact Transaction.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                   connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -4673,7 +4957,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load flat to DimCourses\DIM COURSE.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -5402,7 +5690,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load flat to DimInstructor\DIM INSTRUCTOR.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -6169,7 +6461,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load flat to DimStudent\Insert Destination.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -6367,7 +6663,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -6560,6 +6860,7 @@ Dev Team</DTS:VariableValue>
                   <outputs>
                     <output
                       refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Output]"
+<<<<<<< Updated upstream
                       exclusionGroup="1"
                       name="OLE DB Command Output"
                       synchronousInputId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Inputs[OLE DB Command Input]">
@@ -6703,6 +7004,30 @@ Dev Team</DTS:VariableValue>
                           refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                           dataType="i4"
                           lineageId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+=======
+                      exclusionGroup="1"
+                      name="OLE DB Command Output"
+                      synchronousInputId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Command Error Output"
+                      synchronousInputId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Inputs[OLE DB Command Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+>>>>>>> Stashed changes
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -7378,7 +7703,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load flat to DimStudent\Slowly Changing Dimension.Connections[LookupConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="Defines the connection to use for lookups in the dimension table"
                       name="LookupConnection" />
@@ -7400,7 +7729,7 @@ Dev Team</DTS:VariableValue>
                             <property
                               dataType="System.Int32"
                               name="ColumnType"
-                              typeConverter="ColumnType">2</property>
+                              typeConverter="ColumnType">4</property>
                           </properties>
                         </inputColumn>
                         <inputColumn
@@ -7752,11 +8081,14 @@ Dev Team</DTS:VariableValue>
                   name="Audit Output 1"
                   startId="Package\LOAD from Raw Data\Load flat to DimStudent\Audit.Outputs[Audit Output 1]" />
                 <path
+<<<<<<< Updated upstream
                   refId="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Changing Attribute Updates Output]"
                   endId="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1.Inputs[OLE DB Command Input]"
                   name="Changing Attribute Updates Output"
                   startId="Package\LOAD from Raw Data\Load flat to DimStudent\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]" />
                 <path
+=======
+>>>>>>> Stashed changes
                   refId="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Flat File Source Output]"
                   endId="Package\LOAD from Raw Data\Load flat to DimStudent\Remove Duplicate.Inputs[Sort Input]"
                   name="Flat File Source Output"
@@ -9439,7 +9771,11 @@ Dev Team</DTS:VariableValue>
                   <connections>
                     <connection
                       refId="Package\LOAD from Raw Data\Load Transaction Flat file\TransactionData.Connections[OleDbConnection]"
+<<<<<<< Updated upstream
                       connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
+=======
+                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+>>>>>>> Stashed changes
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -9645,7 +9981,11 @@ Dev Team</DTS:VariableValue>
         DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+<<<<<<< Updated upstream
           SQLTask:Connection="{01EB4E36-B384-4180-8C40-90A29B5B62C7}"
+=======
+          SQLTask:Connection="{B6BBB592-FF89-4B74-A02D-7D80E9860886}"
+>>>>>>> Stashed changes
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[FactTransaction]') and TYPE = ( N'U'))&#xA;DELETE FROM FactTransaction;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -9665,7 +10005,11 @@ Dev Team</DTS:VariableValue>
         DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+<<<<<<< Updated upstream
           SQLTask:Connection="{01EB4E36-B384-4180-8C40-90A29B5B62C7}"
+=======
+          SQLTask:Connection="{B6BBB592-FF89-4B74-A02D-7D80E9860886}"
+>>>>>>> Stashed changes
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimCourse]') and TYPE = ( N'U'))&#xA;DELETE FROM DimCourse;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimStudent]') and TYPE = ( N'U'))&#xA;DELETE FROM DimStudent;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimInstructor]') and TYPE = ( N'U'))&#xA;DELETE FROM DimInstructor;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[TransactionData]') and TYPE = ( N'U'))&#xA;DELETE FROM TransactionData;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -10355,7 +10699,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                 DTS:Name="SqlStatementSource">"insert into Error_Logs values ('"+ @[System::MachineName] + "', '"+ @[System::PackageName] +"', '"+ @[System::SourceName] +"', "+ (DT_WSTR,30)@[System::ErrorCode] +",'"+ @[System::ErrorDescription] +"', getdate())"</DTS:PropertyExpression>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
+<<<<<<< Updated upstream
                   SQLTask:Connection="{01EB4E36-B384-4180-8C40-90A29B5B62C7}"
+=======
+                  SQLTask:Connection="{8A8C1385-2AAE-418D-8BBD-D0085A0393A6}"
+>>>>>>> Stashed changes
                   SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-LONCI57', 'Package', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
@@ -10379,13 +10727,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="161,42"
           Id="Package\Fact Transaction"
+<<<<<<< Updated upstream
           TopLeft="447,431.874999975786" />
+=======
+          TopLeft="438.5,470.333333118095" />
+>>>>>>> Stashed changes
         <NodeLayout
           Size="192,42"
           Id="Package\LOAD from Raw Data\Load flat to DimCourses"
           TopLeft="245.5,24.7916665832616" />
         <NodeLayout
-          Size="202,42"
+          Size="196,42"
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor"
           TopLeft="34,25.2499995964269" />
         <NodeLayout
@@ -10404,6 +10756,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data"
           TopLeft="285.708334187046,32" />
         <NodeLayout
+<<<<<<< Updated upstream
           Size="227.5,42"
           Id="Package\Truncate FactTransaction Table"
           TopLeft="412.416668001563,361.749999726646" />
@@ -10454,11 +10807,77 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               EndConnector="0,80.7499997266457"
               Start="0,0"
               End="0,73.2499997266457">
+=======
+          Size="228,42"
+          Id="Package\Truncate FactTransaction Table"
+          TopLeft="404.416668001563,382.874999621717" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Truncate tables"
+          TopLeft="47.1666677221656,78" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="199.166667722166,99">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="86.5416664648803,73.5"
+              Start="0,0"
+              End="79.0416664648803,73.5">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="0,73.2499997266457" />
+=======
+                    End="39.2708332324402,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.2708332324402,0"
+                    Point2="43.2708332324402,0"
+                    Point3="43.2708332324402,4" />
+                  <mssgle:LineSegment
+                    End="43.2708332324402,69.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43.2708332324402,69.5"
+                    Point2="43.2708332324402,73.5"
+                    Point3="47.2708332324402,73.5" />
+                  <mssgle:LineSegment
+                    End="79.0416664648803,73.5" />
+>>>>>>> Stashed changes
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+<<<<<<< Updated upstream
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="526.833334000782,403.749999726646">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.1250002491399"
+              Start="0,0"
+              End="0,20.6250002491399">
+=======
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="518.562501094304,313">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,69.8749996217168"
+              Start="0,0"
+              End="0,62.3749996217168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.3749996217168" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10469,18 +10888,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="526.833334000782,403.749999726646">
+          TopLeft="518.708334000782,424.874999621717">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.1250002491399"
+              EndConnector="0,45.4583334963779"
               Start="0,0"
-              End="0,20.6250002491399">
+              End="0,37.9583334963779">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="0,20.6250002491399" />
+=======
+                    End="0,37.9583334963779" />
+>>>>>>> Stashed changes
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10489,6 +10913,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+<<<<<<< Updated upstream
+=======
+        <NodeLayout
+          Size="167.5,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="68,267.62499928164" />
+>>>>>>> Stashed changes
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10500,6 +10931,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="151,42"
           Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Error Message"
+<<<<<<< Updated upstream
           TopLeft="55,48.3333332472377" />
         <NodeLayout
           Size="170,42"
@@ -10512,6 +10944,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="465,194"
           Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail"
           TopLeft="128,48.5000000322858" />
+=======
+          TopLeft="32.5,31" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Log Errors"
+          TopLeft="253,28" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="491,139"
+          Size="491,182"
+          Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail"
+          TopLeft="362,55" />
+>>>>>>> Stashed changes
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
@@ -11628,6 +12074,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="145,42"
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\Student Audit"
+<<<<<<< Updated upstream
           TopLeft="691.107142857143,212.928571428571" />
         <NodeLayout
           Size="210,42"
@@ -11670,6 +12117,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Flat File Source Output]"
           TopLeft="310.75,47.4999999999999">
+=======
+          TopLeft="455.25,311.5" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Slowly Changing Dimension"
+          TopLeft="204.75,209.5" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\RawData"
+          TopLeft="247.75,5.49999999999989" />
+        <NodeLayout
+          Size="104,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Audit"
+          TopLeft="475.75,209.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Remove Duplicate"
+          TopLeft="225.25,107.5" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Sort Output]"
+          TopLeft="309.75,149.5">
+>>>>>>> Stashed changes
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11690,6 +12159,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+<<<<<<< Updated upstream
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Audit Output 1]"
           TopLeft="615.607142857143,232.214285714286">
           <EdgeLayout.Curve>
@@ -11698,11 +12168,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               EndConnector="75.5,0"
               Start="0,0"
               End="68,0">
+=======
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Flat File Source Output]"
+          TopLeft="309.75,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="68,0" />
+=======
+                    End="0,52.5" />
+>>>>>>> Stashed changes
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11716,8 +12200,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\Insert Destination"
           TopLeft="5.5,311.5" />
         <EdgeLayout
+<<<<<<< Updated upstream
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[New Output]"
           TopLeft="260.25,251.5">
+=======
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Audit Output 1]"
+          TopLeft="527.75,251.5">
+>>>>>>> Stashed changes
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11746,6 +12235,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+<<<<<<< Updated upstream
             <mssgm:EdgeLabel
               BoundingBox="-114.34138671875,25.5015673981192,54.1827734375,11.43359375"
               RelativePosition="Any" />
@@ -11764,22 +12254,61 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
+=======
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="160.5,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Insert Destination"
+          TopLeft="5.50000000000006,311.5" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[New Output]"
+          TopLeft="276.083333333333,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-190.333333333333,60"
+              Start="0,0"
+              End="-190.333333333333,52.5">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="0,52.5" />
+=======
+                    End="0,20.2722117202268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2722117202268"
+                    Point2="0,24.2722117202268"
+                    Point3="-4,24.2722117202268" />
+                  <mssgle:LineSegment
+                    End="-186.333333333333,24.2722117202268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-186.333333333333,24.2722117202268"
+                    Point2="-190.333333333333,24.2722117202268"
+                    Point3="-190.333333333333,28.2722117202268" />
+                  <mssgle:LineSegment
+                    End="-190.333333333333,52.5" />
+>>>>>>> Stashed changes
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
+<<<<<<< Updated upstream
               BoundingBox="-74.40298828125,20.4208984375,148.8059765625,11.658203125"
+=======
+              BoundingBox="-122.258053385417,29.2722117202268,54.1827734375,11.43359375"
+>>>>>>> Stashed changes
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
+<<<<<<< Updated upstream
           Size="177,42"
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1"
           TopLeft="433.821428571429,347.214285714286" />
@@ -11792,10 +12321,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               EndConnector="161.071428571429,95.7142857142857"
               Start="0,0"
               End="161.071428571429,88.2142857142857">
+=======
+          Size="168.5,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command"
+          TopLeft="226.5,311.5" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Inferred Member Updates Output]"
+          TopLeft="343.416666666667,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-32.6666666666666,60"
+              Start="0,0"
+              End="-32.6666666666666,52.5">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="0,28.704881325571" />
                   <mssgle:CubicBezierSegment
                     Point1="0,28.704881325571"
@@ -11809,18 +12353,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                     Point3="161.071428571429,36.704881325571" />
                   <mssgle:LineSegment
                     End="161.071428571429,88.2142857142857" />
+=======
+                    End="0,20.2722117202268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2722117202268"
+                    Point2="0,24.2722117202268"
+                    Point3="-4,24.2722117202268" />
+                  <mssgle:LineSegment
+                    End="-28.6666666666666,24.2722117202268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.6666666666666,24.2722117202268"
+                    Point2="-32.6666666666666,24.2722117202268"
+                    Point3="-32.6666666666666,28.2722117202268" />
+                  <mssgle:LineSegment
+                    End="-32.6666666666666,52.5" />
+>>>>>>> Stashed changes
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
+<<<<<<< Updated upstream
               BoundingBox="2.00180803571428,37.704881325571,157.0678125,11.6630859375"
+=======
+              BoundingBox="-90.7363216145833,29.2722117202268,148.8059765625,11.658203125"
+>>>>>>> Stashed changes
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Unchanged Output]"
+<<<<<<< Updated upstream
           TopLeft="415.75,230.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11828,18 +12392,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               EndConnector="95.8571428571428,0"
               Start="0,0"
               End="88.3571428571428,0">
+=======
+          TopLeft="414.75,230.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61,0"
+              Start="0,0"
+              End="53.5,0">
+>>>>>>> Stashed changes
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
+<<<<<<< Updated upstream
                     End="88.3571428571428,0" />
+=======
+                    End="53.5,0" />
+>>>>>>> Stashed changes
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
+<<<<<<< Updated upstream
               BoundingBox="1.97823939732142,5,84.4006640625,11.6630859375"
+=======
+              BoundingBox="-15.45033203125,5,84.4006640625,11.6630859375"
+>>>>>>> Stashed changes
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11854,7 +12435,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <Value
           type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+<<<<<<< Updated upstream
   &lt;ConnectionID&gt;{01EB4E36-B384-4180-8C40-90A29B5B62C7}&lt;/ConnectionID&gt;
+=======
+  &lt;ConnectionID&gt;{B6BBB592-FF89-4B74-A02D-7D80E9860886}&lt;/ConnectionID&gt;
+>>>>>>> Stashed changes
   &lt;TableName&gt;[dbo].[DimStudent]&lt;/TableName&gt;
   &lt;InputToColumnsCollection&gt;
     &lt;InputColumnToDBColumn&gt;
@@ -11873,7 +12458,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       &lt;IdentificationString&gt;Remove Duplicate.Outputs[Sort Output].Columns[Email]&lt;/IdentificationString&gt;
       &lt;ColumnName&gt;Email&lt;/ColumnName&gt;
       &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;ChangingAttribute&lt;/ChangeType&gt;
+      &lt;ChangeType&gt;FixedAttribute&lt;/ChangeType&gt;
     &lt;/InputColumnToDBColumn&gt;
     &lt;InputColumnToDBColumn&gt;
       &lt;IdentificationString&gt;Remove Duplicate.Outputs[Sort Output].Columns[Final_Score]&lt;/IdentificationString&gt;
@@ -11909,7 +12494,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
   &lt;GeneratedComponentsIdentificationStrings&gt;
     &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
     &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+<<<<<<< Updated upstream
     &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+=======
+>>>>>>> Stashed changes
   &lt;/GeneratedComponentsIdentificationStrings&gt;
   &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
   &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;

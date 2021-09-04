@@ -7,6 +7,10 @@
     DTS:Name="ConnectionString">@[$Project::DataLog]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
+<<<<<<< Updated upstream
       DTS:ConnectionString="C:\Users\17737\Desktop\Project_Group1_education-master\src\Integration Services Project10\DataLog.txt" />
+=======
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\DataLog" />
+>>>>>>> Stashed changes
   </DTS:ObjectData>
 </DTS:ConnectionManager>

@@ -232,6 +232,7 @@
     </SSIS:Properties>
   </SSIS:Parameter>
   <SSIS:Parameter
+<<<<<<< Updated upstream
     SSIS:Name="Data_Profiling">
     <SSIS:Properties>
       <SSIS:Property
@@ -240,6 +241,16 @@
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
         SSIS:Name="Description">Data Profiling txt </SSIS:Property>
+=======
+    SSIS:Name="DataProfiling">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{766751c1-4e0c-4bb8-8ca1-c4af46d4f630}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Data Profiling txt</SSIS:Property>
+>>>>>>> Stashed changes
       <SSIS:Property
         SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
       <SSIS:Property
@@ -247,7 +258,11 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
+<<<<<<< Updated upstream
         SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Data Profiling.txt</SSIS:Property>
+=======
+        SSIS:Name="Value">C:\Users\Admin\Documents\GitHub\Project_Group1_education\src\Integration Services Project10\Data Profiling.txt</SSIS:Property>
+>>>>>>> Stashed changes
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>

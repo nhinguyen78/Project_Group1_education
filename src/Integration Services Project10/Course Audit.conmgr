@@ -13,7 +13,11 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="1252"
+<<<<<<< Updated upstream
       DTS:ConnectionString="C:\Users\17737\Desktop\Project_Group1_education-master\src\Integration Services Project10\Audit Files\CoursesAudit.txt">
+=======
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\CourseAudit.txt">
+>>>>>>> Stashed changes
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -22,7 +26,11 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Course_Name"
+<<<<<<< Updated upstream
           DTS:DTSID="{66944AEC-D43E-4465-A5B4-9C601F7A5134}"
+=======
+          DTS:DTSID="{EEA46FAF-3662-4238-8B1E-9893ED8AA675}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +38,11 @@
           DTS:DataType="72"
           DTS:TextQualified="True"
           DTS:ObjectName="Execution instance GUID"
+<<<<<<< Updated upstream
           DTS:DTSID="{125760DD-0CEC-4EF5-BBE5-9214B7EF0E9B}"
+=======
+          DTS:DTSID="{8A01F130-C9DB-4048-BAC3-2249E3D27F5A}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -38,7 +50,11 @@
           DTS:DataType="72"
           DTS:TextQualified="True"
           DTS:ObjectName="Package ID"
+<<<<<<< Updated upstream
           DTS:DTSID="{2E50FED3-38A9-47F5-952E-5F2E7B8D7D05}"
+=======
+          DTS:DTSID="{BB96BFF7-19FE-4958-98F5-43A0D778D153}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,7 +63,11 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Package name"
+<<<<<<< Updated upstream
           DTS:DTSID="{22777553-A4C2-43C2-9AD2-194B4E1A8E86}"
+=======
+          DTS:DTSID="{50F2A679-A9B5-4D5C-B127-A2EAE9B2A5CF}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -55,7 +75,11 @@
           DTS:DataType="72"
           DTS:TextQualified="True"
           DTS:ObjectName="Version ID"
+<<<<<<< Updated upstream
           DTS:DTSID="{29240E5E-73DB-4666-A1BA-36A68A25F327}"
+=======
+          DTS:DTSID="{F50019BE-72FE-43B5-AE55-494F78833B6D}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -63,7 +87,11 @@
           DTS:DataType="7"
           DTS:TextQualified="True"
           DTS:ObjectName="Execution start time"
+<<<<<<< Updated upstream
           DTS:DTSID="{D480B0FF-820A-4010-8F20-D4D211757B01}"
+=======
+          DTS:DTSID="{6BE2B7C9-2063-48D7-AC10-0BA4CC351EAE}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -72,7 +100,11 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Machine name"
+<<<<<<< Updated upstream
           DTS:DTSID="{9D0D3F34-B736-49EC-862E-38F091D494B9}"
+=======
+          DTS:DTSID="{B32D37AA-3EF5-4A71-91B0-044EC20FDEE2}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -81,7 +113,11 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="User name"
+<<<<<<< Updated upstream
           DTS:DTSID="{9FD723C0-760D-45FF-BA4F-8DA005B9A518}"
+=======
+          DTS:DTSID="{B0DD9615-43F6-4ACC-8A7D-1B95FDE4FB3C}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -90,7 +126,11 @@
           DTS:DataType="130"
           DTS:TextQualified="True"
           DTS:ObjectName="Task name"
+<<<<<<< Updated upstream
           DTS:DTSID="{1CAA8F58-92CA-4D27-B0D8-7ADC5B47D18F}"
+=======
+          DTS:DTSID="{DB1F437D-9BA9-4EC6-BF80-D0A54EC5FF77}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -98,7 +138,11 @@
           DTS:DataType="72"
           DTS:TextQualified="True"
           DTS:ObjectName="Task ID"
+<<<<<<< Updated upstream
           DTS:DTSID="{21C44C85-E665-4C45-8B5E-86CB97280B78}"
+=======
+          DTS:DTSID="{780DECC8-42E9-42B0-ADBA-57E113000FB5}"
+>>>>>>> Stashed changes
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

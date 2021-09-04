@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="DESKTOP-LONCI57.EducationData 1"
+<<<<<<< Updated upstream
   DTS:DTSID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}"
+=======
+  DTS:DTSID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}"
+>>>>>>> Stashed changes
   DTS:CreationName="OLEDB">
   <DTS:PropertyExpression
     DTS:Name="ConnectionString">@[$Project::ConnectionMSSQL]</DTS:PropertyExpression>
