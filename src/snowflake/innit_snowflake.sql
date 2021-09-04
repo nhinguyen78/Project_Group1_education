@@ -1,41 +1,39 @@
-CREATE DATABASE Education_DB
-
-CREATE TABLE DimCourse (
-	Course_ID INT IDENTITY(1,1) PRIMARY KEY,
-	Course_Name VARCHAR(50) NOT NULL
-)
+CREATE OR REPLACE TABLE DIM_COURSE(
+    Course_ID INT NOT NULL,
+    Course_Name varchar(50)
+  );
 
 
-CREATE TABLE DimInstructor (
-    Instructor_ID INT IDENTITY(1,1) PRIMARY KEY,
-    Instructor_Name varchar(50),
-    Instructor_rank varchar(50), 
-	Ranked_change boolean
-)
+CREATE OR REPLACE TABLE DIM_INSTRUCTOR(
+	Instructor_ID INT NOT NULL,
+    Instructor_Name varchar(50)
+  );
+  
 
-
-
-Create table DimStudent(
-	Student_ID INT IDENTITY(1,1) PRIMARY KEY, 
-	Student_Name varchar(50), 
-	Date_of_birth varchar(50),
-    Gender varchar(50),
-    Rating_class varchar(50),
-    Class_recommendation varchar(50),
-    Final_score varchar(50),
-    Instructor_rating varchar(50),
-    StartDate datetime, 
-	EndDate datetime
-)
-       
-CREATE TABLE FactTransaction (
-	Transaction_ID INT IDENTITY(1,1) PRIMARY KEY, 
-	Instructor_Name varchar(50), 
+CREATE OR REPLACE TABLE DIM_STUDENT(
+    Student_ID int NOT NULL,
 	Student_Name varchar(50),
-	Course_Name varchar(50), 
-	Rating_class varchar(50), 
-	Class_recommendation varchar(50), 
-    Final_Score varchar(50), 
-	Instructor_rating varchar(50), 
-	Registered_date varchar(50)
-)
+    Email varchar(50),
+	Date_of_birth varchar(50),
+	Gender varchar(50),
+    StartDate datetime,
+	EndDate datetime,
+	Rating_class varchar(50),
+	Class_recommendation varchar(50),
+	Final_score varchar(50),
+	Instructor_rating varchar(50)
+  );
+ 
+
+CREATE OR REPLACE TABLE FACTTRANSACTION(
+	Course_ID int NOT NULL,
+	Transaction_ID int NOT NULL,
+    Course_Name varchar(50),
+	Rating_class varchar(50),
+	Class_recommendation varchar(50),
+	Final_Score varchar(50),
+	Instructor_rating varchar(50),
+	Registered_date datetime,
+	Instructor_ID int NOT NULL,
+	Student_ID int NOT NULL
+  );
