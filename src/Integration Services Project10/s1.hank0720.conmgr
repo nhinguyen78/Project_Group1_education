@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="s1.hank0720"
+  DTS:DTSID="{80CEC9BA-C57C-4C7A-A605-9AA9175E8FB9}"
+  DTS:CreationName="ODBC">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::ConnectionSnowStagging]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=hank0720;Dsn=s1;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXXRDRj3j3Eyim/gdkIvGZQAAAAACAAAAAAAQZgAAAAEAACAAAAAvTBEoJAm4eHZn6XIGIqUORX0Ce5Mj4sezyA/Ax6Ea8wAAAAAOgAAAAAIAACAAAAAyKHyDlcze+HOxdz2U01rMLBvdyEK/33EwyW0mKNe8UnAAAADznaP0VoEEN+Olr73E0E0oWhVX6KG7RUivhTysy9JhjzT/oM/Yl/Jl/IahCXB7gTUJze6PKtvh4QRf+CmDRngYTpDTlyFLswNpRuk4j8mioWUNdkVOm/9TLf1BEaKPt2xDAg6KsEbjYvru909QIzjwQAAAAPvhYYO+SQ14TSBIFvRsy/4oX/jnxV3Hj6X47ceHH5JDDvStr5/fHinK4B4X8ToXCbLSrwo87x4bTMB8WgdwOIE=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

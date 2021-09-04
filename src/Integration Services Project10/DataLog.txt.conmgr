@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DataLog.txt"
+  DTS:DTSID="{A5806161-5A38-477B-81AE-7807C5E0C571}"
+  DTS:CreationName="FILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DataLog]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="C:\Users\17737\Desktop\Project_Group1_education-master\src\Integration Services Project10\DataLog.txt" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

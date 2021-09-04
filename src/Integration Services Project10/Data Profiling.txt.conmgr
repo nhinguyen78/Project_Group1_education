@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Data Profiling.txt"
+  DTS:DTSID="{FD654A4D-5A2F-46E2-B9CE-82C8643462B7}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Data Profiling.txt" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
