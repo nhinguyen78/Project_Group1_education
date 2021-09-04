@@ -1,0 +1,182 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="RawData 1"
+  DTS:DTSID="{1CD0B623-5782-46B8-B435-D8346124E063}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::RawData]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+<<<<<<< Updated upstream
+      DTS:ConnectionString="C:\Users\17737\Desktop\Project_Group1_education-master\resources\RawData.csv">
+=======
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\RawData.csv">
+>>>>>>> Stashed changes
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Transaction_ID"
+<<<<<<< Updated upstream
+          DTS:DTSID="{2465D28A-98C5-4F0D-82DB-D158711EAA20}"
+=======
+          DTS:DTSID="{5D2245F5-16BA-4339-973B-BAEE23E018B8}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Instructor_Name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{16D9126F-A141-457B-8960-58D377DEAFCE}"
+=======
+          DTS:DTSID="{07925717-8BBF-4E3B-8896-841B098C955B}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Date_of_Birth"
+<<<<<<< Updated upstream
+          DTS:DTSID="{2AC7B741-4C61-4DFC-8CB9-209B15B1CDFA}"
+=======
+          DTS:DTSID="{6A262769-20BB-4984-9AD8-3830424F5B26}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Course_Name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{B3CA25F6-7C2E-45E7-97F5-6A1E58BABF4D}"
+=======
+          DTS:DTSID="{6D07272B-A663-4E81-828C-86D6248F9C81}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Gender"
+<<<<<<< Updated upstream
+          DTS:DTSID="{8DCE822D-2070-4679-A76A-C9C718A32DB5}"
+=======
+          DTS:DTSID="{AFF3D6B8-B275-428A-87FE-886ECF0B2F69}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Rating_class"
+<<<<<<< Updated upstream
+          DTS:DTSID="{2FD2786C-327A-4D37-982E-67BA9F9BC373}"
+=======
+          DTS:DTSID="{675F1867-4624-4D26-B29B-A7AAA5FB7647}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Student_Name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{EC2D9A50-D7A5-4B82-BB4F-83E438439DA7}"
+=======
+          DTS:DTSID="{4FB13A95-B74B-4A01-92FB-F4F8AB21C0FC}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Class_recommendation"
+<<<<<<< Updated upstream
+          DTS:DTSID="{0F02084E-C214-4F76-AAD6-8388CCA6A5AD}"
+=======
+          DTS:DTSID="{9CF2F041-94AD-42E1-9ED3-A9A488F6115E}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Email"
+<<<<<<< Updated upstream
+          DTS:DTSID="{0895C9F2-807C-4218-AD61-9D2014B54F67}"
+=======
+          DTS:DTSID="{CC44804A-8B1D-406A-BF51-65D5B5B818AD}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Instructor_rating"
+<<<<<<< Updated upstream
+          DTS:DTSID="{F65A2ED8-8849-4645-AF2B-CE4CB6ED3DBD}"
+=======
+          DTS:DTSID="{F0F44020-B115-4381-A86D-FC46DA936A90}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Final_Score"
+<<<<<<< Updated upstream
+          DTS:DTSID="{9A08EBD6-C88A-43B3-933F-4CD5FEAC9F04}"
+=======
+          DTS:DTSID="{57598885-5E1F-4A6A-975C-0AF3FE148864}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Registered_date"
+<<<<<<< Updated upstream
+          DTS:DTSID="{5B4A57B5-CB95-4A68-94DC-D0DCCC07C9EB}"
+=======
+          DTS:DTSID="{BFB9EB20-D9F0-4617-AC26-D1FB30741CEA}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Instructor Audit"
+  DTS:DTSID="{9EBB139C-6427-4DCE-A6B6-7A393201533F}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::InstructorAudit]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+<<<<<<< Updated upstream
+      DTS:ConnectionString="C:\Users\17737\Desktop\Project_Group1_education-master\src\Integration Services Project10\Audit Files\InstructorAudit.txt">
+=======
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\InstructorAudit.txt">
+>>>>>>> Stashed changes
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Instructor_Name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{D495ABBF-C4B0-4F09-A23C-28E16F3A13EC}"
+=======
+          DTS:DTSID="{C958964E-E5CD-439F-B7D3-E432A5021C63}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Execution instance GUID"
+<<<<<<< Updated upstream
+          DTS:DTSID="{3BA11CD1-9FC8-4C4A-A9DA-FCFA77B2E636}"
+=======
+          DTS:DTSID="{C82B6F22-E06B-4612-A7B6-5AA6B03FAE05}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Package ID"
+<<<<<<< Updated upstream
+          DTS:DTSID="{89C27220-A386-4509-BADE-472D284FCE66}"
+=======
+          DTS:DTSID="{1F80FCD8-7920-4A3E-AC91-27531CB59A04}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Package name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{19707313-8C1B-44D7-908C-4B3E66DF5A4E}"
+=======
+          DTS:DTSID="{8E765F61-FE28-49A6-84F5-09B135DCE1A4}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Version ID"
+<<<<<<< Updated upstream
+          DTS:DTSID="{3D7A12EC-78BC-4E08-88C1-41A996D4CE4F}"
+=======
+          DTS:DTSID="{4822EF71-940F-4D52-B53E-F701A63BE76C}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="7"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Execution start time"
+<<<<<<< Updated upstream
+          DTS:DTSID="{BB0DB875-C105-426E-8674-3802AC09A3F0}"
+=======
+          DTS:DTSID="{147CA91F-D93F-4FB0-B015-C00CC6970833}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="15"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Machine name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{5F86FF61-50E6-47D5-B978-B9AA3945290A}"
+=======
+          DTS:DTSID="{6221FEBE-47ED-48AF-A621-DF588334E938}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="User name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{0E630562-EE39-4E22-98F3-69E12CF5B3BA}"
+=======
+          DTS:DTSID="{123F492D-C709-4066-8D2C-F48FA9C97ED5}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="64"
+          DTS:DataType="130"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Task name"
+<<<<<<< Updated upstream
+          DTS:DTSID="{3931D6E2-E148-45B5-B50A-C61BBA6F40ED}"
+=======
+          DTS:DTSID="{7B16AA1D-519A-48D4-8CA2-AE95825F0FD9}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:DataType="72"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Task ID"
+<<<<<<< Updated upstream
+          DTS:DTSID="{AC25D1E6-20D2-489A-8B85-9A880494B192}"
+=======
+          DTS:DTSID="{7BE986F4-AB44-438D-80E2-472E4665CBAC}"
+>>>>>>> Stashed changes
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

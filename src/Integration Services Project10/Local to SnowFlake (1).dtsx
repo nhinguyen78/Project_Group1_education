@@ -5,120 +5,20 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-LONCI57"
   DTS:CreatorName="DESKTOP-LONCI57\Admin"
-  DTS:DTSID="{C9B28FAB-9682-4C18-A5D8-ABAB70FCA049}"
+  DTS:DTSID="{B394E6DE-7733-4DD0-920C-73DD4DEA7C72}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.167"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{3273BF89-CA70-4A90-8D19-16A8DF531EC5}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{3C8680DF-E931-4187-A0D7-5B6ED4A93566}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[CSV_Output]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{ACD82533-9371-424B-B41F-6EF28F5AE1A9}"
-      DTS:ObjectName="CSV_Output">
-      <DTS:PropertyExpression
-        DTS:Name="ConnectionString">@[$Project::CSV_OutputFact]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\FactTransaction.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Course_ID"
-              DTS:DTSID="{863A5254-0D11-4105-8B41-2A00909D4B3F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Transaction_ID"
-              DTS:DTSID="{37D18F62-995A-40B5-A443-88B072198C51}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Rating_class"
-              DTS:DTSID="{C2BD0BC6-8D70-42FA-AA72-139293B07A7B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Class_recommendation"
-              DTS:DTSID="{292849E3-D27B-4593-AC05-D31B055D82F8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Final_Score"
-              DTS:DTSID="{15DCF1F0-43BB-4FCE-8990-409DB5192BB6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_rating"
-              DTS:DTSID="{7DF5F891-FF2B-4E10-93F9-E3F2C488EA63}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Registered_date"
-              DTS:DTSID="{8EAC7E49-83E1-4CEF-BBED-9D34E33B5698}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Instructor_ID"
-              DTS:DTSID="{EA143DE8-152A-4BCB-80E3-8FBC35A5F633}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Student_ID"
-              DTS:DTSID="{18BDFBAB-0572-4BA6-BA00-981067BA9862}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C11FECFE-AD55-448D-8D49-18F29D15887D}"
+      DTS:DTSID="{0FD772F2-D4C0-4AFB-BDC1-1C11E122EDBF}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Executetable">
@@ -127,7 +27,38 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0708FAD1-3A3C-41F1-ACC8-847AE54A8E42}"
+      DTS:DTSID="{45DB0807-989B-43E4-B533-2B26D94C68A0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="From">
+      <DTS:VariableValue
+        DTS:DataType="8">hank072097@gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{479C78D4-1045-409B-936C-FECB79A25EA9}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot; Hi Team,&#xA;&#xA;&#xA;The Package &quot;+ @[System::PackageName] + &quot; has failed from &quot;+ @[System::MachineName] +&quot;&#xA;&#xA;&#xA;Please check Error Logs or contact us for further information&#xA;&#xA;.&#xA;Thank you,&#xA;&#xA;Dev Team&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="MessageBody">
+      <DTS:VariableValue
+        DTS:DataType="8"> Hi Team,
+
+
+The Package Package1 has failed from DESKTOP-LONCI57
+
+
+Please check Error Logs or contact us for further information
+
+.
+Thank you,
+
+Dev Team</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F05F7AA5-D9F5-4022-A5EE-4ACA74CEDC58}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PythonScript">
@@ -136,7 +67,61 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8FBD0AA9-F04C-4A88-9D9D-23515FBCB452}"
+      DTS:DTSID="{D753DBEC-9403-4EAB-914F-C91070EC4824}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SMTPPassword">
+      <DTS:VariableValue
+        DTS:DataType="8">Forever2@</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D54EF685-4577-4C8B-8768-70A1DFC4F9AB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="SMTPPort">
+      <DTS:VariableValue
+        DTS:DataType="3">587</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7EC0CC9D-5E96-47B0-A180-8DAF9D003898}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SMTPServer">
+      <DTS:VariableValue
+        DTS:DataType="8">smtp.gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B4589DE7-14B8-45DB-8B60-28841D75A03E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SMTPUsername">
+      <DTS:VariableValue
+        DTS:DataType="8">hank072097@gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{120D580C-04FC-43BD-AAD6-299EFF7D1FA1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Subject">
+      <DTS:VariableValue
+        DTS:DataType="8">SSIS Error Alert</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B53A36CE-483E-47DE-B3F0-568400CE0339}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="To">
+      <DTS:VariableValue
+        DTS:DataType="8">hank072097@gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FECFF060-8C97-482D-BD00-C2C8CC762DB6}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="WorkingDirectory">
@@ -149,7 +134,7 @@
       DTS:refId="Package\Automation Rest API"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{254A2D0A-2463-4959-9AE2-99FB4FC6DECA}"
+      DTS:DTSID="{3F61646A-9533-446E-BC25-86903B0DF040}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Automation Rest API">
@@ -159,12 +144,12 @@
           DTS:refId="Package\Automation Rest API\Run Python Rest API"
           DTS:CreationName="Microsoft.ExecuteProcess"
           DTS:Description="Execute Process Task"
-          DTS:DTSID="{202C0DE7-30B8-4D99-A31C-60E10B759F02}"
+          DTS:DTSID="{0991FC7E-547B-468E-8C3D-9E91178F97A1}"
           DTS:ExecutableType="Microsoft.ExecuteProcess"
           DTS:LocaleID="-1"
           DTS:ObjectName="Run Python Rest API"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:PropertyExpression
             DTS:Name="Arguments">@[User::PythonScript]</DTS:PropertyExpression>
@@ -183,12 +168,12 @@
           DTS:refId="Package\Automation Rest API\upload to Snowflake"
           DTS:CreationName="Microsoft.ExecuteProcess"
           DTS:Description="Execute Process Task"
-          DTS:DTSID="{A8324E44-71BC-4FDE-9D5B-773A741595C2}"
+          DTS:DTSID="{93EE40DF-1147-4A45-BD9F-73908299B87C}"
           DTS:ExecutableType="Microsoft.ExecuteProcess"
           DTS:LocaleID="-1"
           DTS:ObjectName="upload to Snowflake"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -200,10 +185,218 @@
       </DTS:Executables>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Data Profiling Task"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{D4752EBB-3548-4724-A652-6F0569A0901E}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Task"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="Data Profiling.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimCourse" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimInstructor" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="DimStudent" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq3">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq3">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq3">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq3">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq3">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="FactTransaction" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq4">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq4">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq4">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq4">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq4">
+        <DataSourceID>{24D66E03-1344-41AB-A481-2D237452B22F}</DataSourceID>
+        <Table Schema="dbo" Table="TransactionData" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Load Data to Snowflake"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{6313D6B9-F59F-490B-8CF2-8411F9E775D1}"
+      DTS:DTSID="{FF06C238-E026-4686-8EB6-D4EEFC89ED30}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Load Data to Snowflake">
@@ -213,7 +406,7 @@
           DTS:refId="Package\Load Data to Snowflake\Loading DimCourse"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{92675298-F4EA-4BE0-9F47-D7835C151462}"
+          DTS:DTSID="{5A2B7C7E-29DB-484E-93A0-63E852719953}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Loading DimCourse"
@@ -401,7 +594,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\DimCouse.Connections[OleDbConnection]"
-                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+                      connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -538,7 +731,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -1003,7 +1196,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -1096,7 +1289,7 @@
                       dataType="System.String"
                       description="The name of the table to be fetched."
                       expressionType="Notify"
-                      name="TableName">"DWHOUSE"."DIM_COURSE"</property>
+                      name="TableName">"STAGGINGDWH"."DIM_COURSE"</property>
                     <property
                       dataType="System.Int32"
                       description="Specify the number of rows fetched per batch."
@@ -1141,7 +1334,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimCourse\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="{0CCEF8DA-AB54-4C5B-A724-AD31B7A696B6}:external"
+                      connectionManagerID="{80CEC9BA-C57C-4C7A-A605-9AA9175E8FB9}:external"
                       connectionManagerRefId="Project.ConnectionManagers[s1.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -1257,7 +1450,7 @@
           DTS:refId="Package\Load Data to Snowflake\Loading DimInstructor"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{2ED6C670-7FE6-474A-83AC-982DE8D3EFC8}"
+          DTS:DTSID="{A1962DE0-D6A2-4BE3-9E26-D17245AF7C45}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Loading DimInstructor"
@@ -1445,7 +1638,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\DimInstructor.Connections[OleDbConnection]"
-                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+                      connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -1582,7 +1775,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -2047,7 +2240,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -2185,7 +2378,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading DimInstructor\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="{0CCEF8DA-AB54-4C5B-A724-AD31B7A696B6}:external"
+                      connectionManagerID="{80CEC9BA-C57C-4C7A-A605-9AA9175E8FB9}:external"
                       connectionManagerRefId="Project.ConnectionManagers[s1.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -2301,7 +2494,7 @@
           DTS:refId="Package\Load Data to Snowflake\Loading Student"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{5C3808C6-9FE9-4FA6-B69E-463CFE6F2BED}"
+          DTS:DTSID="{0EB0A11A-4AB4-4D35-B1E4-02015155FA86}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Loading Student"
@@ -2339,6 +2532,17 @@
                           cachedLength="50"
                           cachedName="STUDENT_NAME"
                           lineageId="Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_NAME]" />
+                        <inputColumn
+                          refId="Package\Load Data to Snowflake\Loading Student\Conditional Split.Inputs[Conditional Split Input].Columns[Student_ID]"
+                          cachedDataType="i4"
+                          cachedName="Student_ID"
+                          lineageId="Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[Student_ID]" />
+                        <inputColumn
+                          refId="Package\Load Data to Snowflake\Loading Student\Conditional Split.Inputs[Conditional Split Input].Columns[STUDENT_ID]"
+                          cachedDataType="numeric"
+                          cachedName="STUDENT_ID"
+                          cachedPrecision="38"
+                          lineageId="Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_ID]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -2386,13 +2590,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                          name="Expression">![ISNULL](#{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_NAME]}) &amp;&amp; (#{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_NAME]} != #{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[Student_Name]})</property>
+                          name="Expression">![ISNULL](#{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_NAME]}) &amp;&amp; (#{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_NAME]} != #{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[Student_Name]}) &amp;&amp; (#{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_ID]} == #{Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[Student_ID]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the friendly version of the expression. This expression version uses column names."
                           expressionType="Notify"
-                          name="FriendlyExpression">!ISNULL(STUDENT_NAME) &amp;&amp; (STUDENT_NAME != Student_Name)</property>
+                          name="FriendlyExpression">!ISNULL(STUDENT_NAME) &amp;&amp; (STUDENT_NAME != Student_Name) &amp;&amp; (STUDENT_ID == Student_ID)</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -2489,7 +2693,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\DimStudent.Connections[OleDbConnection]"
-                      connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+                      connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -2830,7 +3034,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\DWHouse.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -3141,6 +3345,12 @@
                           cachedName="STUDENT_NAME"
                           cachedSortKeyPosition="1"
                           lineageId="Package\Load Data to Snowflake\Loading Student\Sort 1.Outputs[Sort Output].Columns[STUDENT_NAME]" />
+                        <inputColumn
+                          refId="Package\Load Data to Snowflake\Loading Student\Merge Join.Inputs[Merge Join Right Input].Columns[STUDENT_ID]"
+                          cachedDataType="numeric"
+                          cachedName="STUDENT_ID"
+                          cachedPrecision="38"
+                          lineageId="Package\Load Data to Snowflake\Loading Student\Sort 1.Outputs[Sort Output].Columns[STUDENT_ID]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -3324,6 +3534,20 @@
                               dataType="System.Int32"
                               description="The input column associated with this output column"
                               name="InputColumnID">#{Package\Load Data to Snowflake\Loading Student\Merge Join.Inputs[Merge Join Right Input].Columns[STUDENT_NAME]}</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_ID]"
+                          dataType="numeric"
+                          lineageId="Package\Load Data to Snowflake\Loading Student\Merge Join.Outputs[Merge Join Output].Columns[STUDENT_ID]"
+                          name="STUDENT_ID"
+                          precision="38">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="The input column associated with this output column"
+                              name="InputColumnID">#{Package\Load Data to Snowflake\Loading Student\Merge Join.Inputs[Merge Join Right Input].Columns[STUDENT_ID]}</property>
                           </properties>
                         </outputColumn>
                       </outputColumns>
@@ -4187,7 +4411,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\Source Course Snowflake.Connections[ODBCConnection]"
-                      connectionManagerID="{AA880464-535F-466D-8217-9BD29113F972}:external"
+                      connectionManagerID="{AF7C316B-5017-40C0-B435-DD4A3ACF5489}:external"
                       connectionManagerRefId="Project.ConnectionManagers[dw.hank0720 1]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -4517,7 +4741,7 @@
                   <connections>
                     <connection
                       refId="Package\Load Data to Snowflake\Loading Student\Stagging.Connections[ODBCConnection]"
-                      connectionManagerID="{0CCEF8DA-AB54-4C5B-A724-AD31B7A696B6}:external"
+                      connectionManagerID="{80CEC9BA-C57C-4C7A-A605-9AA9175E8FB9}:external"
                       connectionManagerRefId="Project.ConnectionManagers[s1.hank0720]"
                       description="The ODBC runtime connection used to access the database."
                       name="ODBCConnection" />
@@ -4755,7 +4979,7 @@
       DTS:refId="Package\Loading Fact"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{503E2E84-F25B-4161-B509-8421D93D05BA}"
+      DTS:DTSID="{8B26206E-17C2-4DC6-B9D2-760DEBC9DD60}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Loading Fact"
@@ -4816,7 +5040,7 @@
               <connections>
                 <connection
                   refId="Package\Loading Fact\Fact Table.Connections[OleDbConnection]"
-                  connectionManagerID="{B6BBB592-FF89-4B74-A02D-7D80E9860886}:external"
+                  connectionManagerID="{01EB4E36-B384-4180-8C40-90A29B5B62C7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
@@ -4843,6 +5067,17 @@
                       externalMetadataColumnId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].ExternalColumns[Transaction_ID]"
                       lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Transaction_ID]"
                       name="Transaction_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Course_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].ExternalColumns[Course_Name]"
+                      length="50"
+                      lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Course_Name]"
+                      name="Course_Name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Rating_class]"
@@ -4929,6 +5164,12 @@
                       dataType="i4"
                       name="Transaction_ID" />
                     <externalMetadataColumn
+                      refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].ExternalColumns[Course_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Course_Name" />
+                    <externalMetadataColumn
                       refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].ExternalColumns[Rating_class]"
                       codePage="1252"
                       dataType="str"
@@ -4983,6 +5224,13 @@
                       dataType="i4"
                       lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Error Output].Columns[Transaction_ID]"
                       name="Transaction_ID" />
+                    <outputColumn
+                      refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Error Output].Columns[Course_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Error Output].Columns[Course_Name]"
+                      name="Course_Name" />
                     <outputColumn
                       refId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Error Output].Columns[Rating_class]"
                       codePage="1252"
@@ -5071,8 +5319,8 @@
               <connections>
                 <connection
                   refId="Package\Loading Fact\Flat File Destination.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[CSV_Output]"
-                  connectionManagerRefId="Package.ConnectionManagers[CSV_Output]"
+                  connectionManagerID="{EF4B23BB-C8B8-4003-ADFE-26CCEA6AB042}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[CSV_OutputFact]"
                   name="FlatFileConnection" />
               </connections>
               <inputs>
@@ -5081,6 +5329,14 @@
                   hasSideEffects="true"
                   name="Flat File Destination Input">
                   <inputColumns>
+                    <inputColumn
+                      refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].Columns[Course_Name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Course_Name"
+                      externalMetadataColumnId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Course_Name]"
+                      lineageId="Package\Loading Fact\Fact Table.Outputs[OLE DB Source Output].Columns[Course_Name]" />
                     <inputColumn
                       refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].Columns[Course_ID]"
                       cachedDataType="i4"
@@ -5149,6 +5405,12 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
+                      refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Course_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Course_Name" />
+                    <externalMetadataColumn
                       refId="Package\Loading Fact\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Course_ID]"
                       dataType="i4"
                       name="Course_ID" />
@@ -5214,7 +5476,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{D0B2EF0E-E965-4AC6-8776-D88772CBE222}"
+      DTS:DTSID="{9D804FC9-76C1-4A5C-9880-3203680F950A}"
       DTS:From="Package\Load Data to Snowflake"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -5222,12 +5484,679 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{F1547B69-D3D5-4FAE-94AB-2AF9A8B64FB6}"
+      DTS:DTSID="{F6359A58-7004-4D21-A556-4A9A3BCC6087}"
       DTS:From="Package\Loading Fact"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Automation Rest API" />
   </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{977B7C37-2931-462E-BCEF-06E478BA375D}"
+      DTS:EventID="1650545664"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{27660306-09F4-475F-A8CA-0549B61AF923}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Failure Logs and Send Mail"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:DTSID="{b9d51afb-bb74-4de3-856d-f1efc0879b1e}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Failure Logs and Send Mail">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Error Message"
+              DTS:CreationName="Microsoft.ScriptTask"
+              DTS:Description="Script Task"
+              DTS:DTSID="{e194cdeb-f7f0-45f3-b243-ca460afbb217}"
+              DTS:ExecutableType="Microsoft.ScriptTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Error Message">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <ScriptProject
+                  Name="ST_b187196adc44456f9eb602d086f0b94d"
+                  VSTAMajorVersion="15"
+                  VSTAMinorVersion="0"
+                  Language="VisualBasic"
+                  ReadOnlyVariables="System::ErrorCode,System::ErrorDescription,System::SourceName,User::From,User::MessageBody,System::PackageName,User::SMTPPassword,User::SMTPPort,User::SMTPServer,User::SMTPUsername,User::Subject,User::To">
+                  <ProjectItem
+                    Name="ST_b187196adc44456f9eb602d086f0b94d.vbproj"
+                    Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{11fbe8ab-b2a5-4bde-a910-6fa2a30d83b8}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>My Project</AppDesignerFolder><RootNamespace>ST_83941a4dc994422085ed8a1a1b17cd8a</RootNamespace><AssemblyName>ST_b187196adc44456f9eb602d086f0b94d</AssemblyName><TargetFrameworkVersion>v4.7</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch><TargetFrameworkProfile></TargetFrameworkProfile></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineDebug>true</DefineDebug><DefineTrace>true</DefineTrace><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineDebug>false</DefineDebug><DefineTrace>true</DefineTrace><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><Import Include="Microsoft.VisualBasic" /><Import Include="System" /><Import Include="System.Collections" /><Import Include="System.Data" /><Import Include="System.Diagnostics" /><Import Include="System.Windows.Forms" /></ItemGroup><ItemGroup><AppDesigner Include="My Project\" /><Compile Include="My Project\AssemblyInfo.vb"><SubType>Code</SubType></Compile><EmbeddedResource Include="My Project\Resources.resx"><Generator>VbMyResourcesResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.vb</LastGenOutput><CustomToolNamespace>My.Resources</CustomToolNamespace></EmbeddedResource><Compile Include="My Project\Resources.Designer.vb"><AutoGen>True</AutoGen><DesignTime>True</DesignTime><DependentUpon>Resources.resx</DependentUpon><SubType>Code</SubType></Compile><None Include="My Project\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.vb</LastGenOutput></None><Compile Include="My Project\Settings.Designer.vb"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon><SubType>Code</SubType></Compile><Compile Include="ScriptMain.vb"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a VB project.--><Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="vb" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST150</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
+                  <ProjectItem
+                    Name="My Project\AssemblyInfo.vb"
+                    Encoding="UTF8"><![CDATA[Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+
+<Assembly: AssemblyTitle("ST_83941a4dc994422085ed8a1a1b17cd8a")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("ST_83941a4dc994422085ed8a1a1b17cd8a")> 
+<Assembly: AssemblyCopyright("Copyright @  2021")> 
+<Assembly: AssemblyTrademark("")> 
+<Assembly: CLSCompliant(True)> 
+
+<Assembly: ComVisible(False)> 
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("b1256f75-d89b-4dff-a2ee-676a3cf40f05")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem>
+                  <ProjectItem
+                    Name="ScriptMain.vb"
+                    Encoding="UTF8"><![CDATA[#Region "Help:  Introduction to the script task"
+'The Script Task allows you to perform virtually any operation that can be accomplished in
+'a .Net application within the context of an Integration Services control flow. 
+
+'Expand the other regions which have "Help" prefixes for examples of specific ways to use
+'Integration Services features within this script task.
+#End Region
+
+
+#Region "Imports"
+Imports System
+Imports System.Data
+Imports System.Math
+Imports Microsoft.SqlServer.Dts.Runtime
+Imports System.Net
+Imports System.Net.Mail
+#End Region
+
+'ScriptMain is the entry point class of the script.  Do not change the name, attributes,
+'or parent of this class.
+<Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute()> _
+<System.CLSCompliantAttribute(False)> _
+Partial Public Class ScriptMain
+    Inherits Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+
+#Region "Help:  Using Integration Services variables and parameters in a script"
+    'To use a variable in this script, first ensure that the variable has been added to 
+    'either the list contained in the ReadOnlyVariables property or the list contained in 
+    'the ReadWriteVariables property of this script task, according to whether or not your
+    'code needs to write to the variable.  To add the variable, save this script, close this instance of
+    'Visual Studio, and update the ReadOnlyVariables and 
+    'ReadWriteVariables properties in the Script Transformation Editor window.
+    'To use a parameter in this script, follow the same steps. Parameters are always read-only.
+
+    'Example of reading from a variable:
+    ' startTime = Dts.Variables("System::StartTime").Value
+
+    'Example of writing to a variable:
+    ' Dts.Variables("User::myStringVariable").Value = "new value"
+
+    'Example of reading from a package parameter:
+    ' batchId = Dts.Variables("$Package::batchId").Value
+
+    'Example of reading from a project parameter:
+    ' batchId = Dts.Variables("$Project::batchId").Value
+
+    'Example of reading from a sensitive project parameter:
+    ' batchId = Dts.Variables("$Project::batchId").GetSensitiveValue()
+#End Region
+
+#Region "Help:  Firing Integration Services events from a script"
+    'This script task can fire events for logging purposes.
+
+    'Example of firing an error event:
+    ' Dts.Events.FireError(18, "Process Values", "Bad value", "", 0)
+
+    'Example of firing an information event:
+    ' Dts.Events.FireInformation(3, "Process Values", "Processing has started", "", 0, fireAgain)
+
+    'Example of firing a warning event:
+    ' Dts.Events.FireWarning(14, "Process Values", "No values received for input", "", 0)
+#End Region
+
+#Region "Help:  Using Integration Services connection managers in a script"
+    'Some types of connection managers can be used in this script task.  See the topic 
+    '"Working with Connection Managers Programatically" for details.
+
+    'Example of using an ADO.Net connection manager:
+    ' Dim rawConnection As Object = Dts.Connections("Sales DB").AcquireConnection(Dts.Transaction)
+    ' Dim myADONETConnection As SqlConnection = CType(rawConnection, SqlConnection)
+    ' <Use the connection in some code here, then release the connection>
+    ' Dts.Connections("Sales DB").ReleaseConnection(rawConnection)
+
+    'Example of using a File connection manager
+    ' Dim rawConnection As Object = Dts.Connections("Prices.zip").AcquireConnection(Dts.Transaction)
+    ' Dim filePath As String = CType(rawConnection, String)
+    ' <Use the connection in some code here, then release the connection>
+    ' Dts.Connections("Prices.zip").ReleaseConnection(rawConnection)
+#End Region
+
+    'This method is called when this script task executes in the control flow.
+    'Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+    'To open Help, press F1.
+
+    Public Sub Main()
+        Dim Smtp_Client As New SmtpClient
+        Dim e_mail As New MailMessage()
+        Smtp_Client.UseDefaultCredentials = False
+        Dim SMTPUsername As String = Dts.Variables("User::SMTPUsername").Value.ToString()
+        Dim SMTPPassword As String = Dts.Variables("User::SMTPPassword").Value.ToString()
+        Smtp_Client.Credentials = New NetworkCredential(SMTPUsername, SMTPPassword)
+        Smtp_Client.Port = CInt(Dts.Variables("User::SMTPPort").Value)
+        Smtp_Client.EnableSsl = True
+        Smtp_Client.Host = Dts.Variables("User::SMTPServer").Value.ToString()
+
+        e_mail = New MailMessage()
+        e_mail.From = New MailAddress(Dts.Variables("User::From").Value.ToString())
+        e_mail.To.Add(Dts.Variables("User::To").Value.ToString())
+        e_mail.Subject = Dts.Variables("User::Subject").Value.ToString()
+        e_mail.IsBodyHtml = False
+        e_mail.Body = Dts.Variables("User::MessageBody").Value.ToString()
+        Smtp_Client.Send(e_mail)
+
+        Dts.TaskResult = ScriptResults.Success
+    End Sub
+
+#Region "ScriptResults declaration"
+    'This enum provides a convenient shorthand within the scope of this class for setting the
+    'result of the script.
+
+    'This code was generated automatically.
+    Enum ScriptResults
+        Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success
+        Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+    End Enum
+
+#End Region
+
+End Class]]></ProjectItem>
+                  <ProjectItem
+                    Name="My Project\Settings.settings"
+                    Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+                  <ProjectItem
+                    Name="My Project\Settings.Designer.vb"
+                    Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class]]></ProjectItem>
+                  <ProjectItem
+                    Name="Project"
+                    Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_83941a4dc994422085ed8a1a1b17cd8a</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_83941a4dc994422085ed8a1a1b17cd8a</msb:DisplayName>
+    <msb:ProjectId>{2D3BF1B8-3B48-460E-847E-9B5ADA297DEF}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_b187196adc44456f9eb602d086f0b94d.vbproj" />
+    <msb:File Include="My Project\Settings.Designer.vb" />
+    <msb:File Include="My Project\AssemblyInfo.vb" />
+    <msb:File Include="ScriptMain.vb" />
+    <msb:File Include="My Project\Resources.resx" />
+    <msb:File Include="My Project\Resources.Designer.vb" />
+    <msb:File Include="My Project\Settings.settings" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+                  <ProjectItem
+                    Name="My Project\Resources.resx"
+                    Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+                  <ProjectItem
+                    Name="My Project\Resources.Designer.vb"
+                    Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+Namespace My.Resources
+    
+    '''<summary>
+    '''   A strongly-typed resource class, for looking up localized strings, etc.
+    '''</summary>
+    'This class was auto-generated by the Strongly Typed Resource Builder
+    'class via a tool like ResGen or Visual Studio.NET.
+    'To add or remove a member, edit your .ResX file then rerun ResGen
+    'with the /str option, or rebuild your VS project.
+    Class MyResources
+        
+        Private Shared _resMgr As System.Resources.ResourceManager
+        
+        Private Shared _resCulture As System.Globalization.CultureInfo
+        
+        Friend Sub New()
+            MyBase.New
+        End Sub
+        
+        '''<summary>
+        '''   Returns the cached ResourceManager instance used by this class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared ReadOnly Property ResourceManager() As System.Resources.ResourceManager
+            Get
+                If (_resMgr Is Nothing) Then
+                    Dim temp As System.Resources.ResourceManager = New System.Resources.ResourceManager("My.Resources.MyResources", GetType(MyResources).Assembly)
+                    _resMgr = temp
+                End If
+                Return _resMgr
+            End Get
+        End Property
+        
+        '''<summary>
+        '''   Overrides the current thread's CurrentUICulture property for all
+        '''   resource lookups using this strongly typed resource class.
+        '''</summary>
+        <System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        Public Shared Property Culture() As System.Globalization.CultureInfo
+            Get
+                Return _resCulture
+            End Get
+            Set
+                _resCulture = value
+            End Set
+        End Property
+    End Class
+End Namespace]]></ProjectItem>
+                  <BinaryItem
+                    Name="ST_83941a4dc994422085ed8a1a1b17cd8a.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJ8rMWEAAAAAAAAAAOAAIiALAVAAAB4AAAAIAAAAAAAA/jsA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAKw7AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAABBwAAAAgAAAAHgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAgAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAJgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADg
+OwAAAAAAAEgAAAACAAUAlCMAAGAXAAABAAAAAAAAAPQ6AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBgAAAoqHgIoGQAACiqmcxoAAAqAAQAABHMbAAAKgAIA
+AARzHAAACoADAAAEcx0AAAqABAAABCoufgEAAARvHgAACioufgIAAARvHwAACioufgMAAARvIAAA
+CioufgQAAARvIQAACioeAigiAAAKKq5+BQAABC0ecgEAAHDQBQAAAigjAAAKbyQAAApzJQAACoAF
+AAAEfgUAAAQqGn4GAAAEKh4CgAYAAAQqQnMiAAAKKCYAAAqACAAABCoeAignAAAKKgAAGzABAD8A
+AAAAAAAAfgcAAAQtMn4IAAAEKCYAAAooKAAACn4HAAAELRxzDQAABoAHAAAE3hB+CAAABCgmAAAK
+KCkAAArcfgcAAAQqAAEQAAACAB0ADCkAEAAAAAAeAigqAAAKKhMwBABuAQAAAQAAEXMrAAAKcywA
+AAoKJRZvLQAACgIoLgAACm8vAAAKcjMAAHBvMAAACm8xAAAKbzIAAAoLAiguAAAKby8AAApyWQAA
+cG8wAAAKbzEAAApvMgAACgwlBwhzMwAACm80AAAKJQIoLgAACm8vAAAKcn8AAHBvMAAACm8xAAAK
+KDUAAApvNgAACiUXbzcAAAolAiguAAAKby8AAApynQAAcG8wAAAKbzEAAApvMgAACm84AAAKcywA
+AAoKBgIoLgAACm8vAAAKcr8AAHBvMAAACm8xAAAKbzIAAApzOQAACm86AAAKBm87AAAKAiguAAAK
+by8AAApy1QAAcG8wAAAKbzEAAApvMgAACm88AAAKBgIoLgAACm8vAAAKcucAAHBvMAAACm8xAAAK
+bzIAAApvPQAACgYWbz4AAAoGAiguAAAKby8AAApyAwEAcG8wAAAKbzEAAApvMgAACm8/AAAKBm9A
+AAAKAiguAAAKFm9BAAAKKjYCAygmAAAKKEIAAAoqHgIoQwAACiou0AgAAAIoIwAACioeAigyAAAK
+KhMwAQAUAAAAAgAAEQKMBQAAGy0IKAEAACsKKwICCgYqIgP+FQUAABsqAAAAEzACACgAAAADAAAR
+AntFAAAKb0YAAAoKBowIAAAbLRIoAgAAKwoCe0UAAAoGb0cAAAoGKkoCKCIAAAoCc0gAAAp9RQAA
+CioAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAPAgAACN+AACoCAAA/AkAACNT
+dHJpbmdzAAAAAKQSAAAoAQAAI1VTAMwTAAAQAAAAI0dVSUQAAADcEwAAhAMAACNCbG9iAAAAAAAA
+AAIAAAFXHaIJCQ8AAAD6ATMAFgAAAQAAADQAAAAKAAAADAAAABkAAAAEAAAASAAAAAIAAAA3AAAA
+AwAAAAQAAAAIAAAACQAAAAgAAAABAAAABQAAAAEAAAADAAAAAwAAAAIAAAAAAE0FAQAAAAAABgBq
+A/4HBgAPBP4HBgBBAj8HDwCkCAAABgCCAiAGBgBNAyAGBgD2AyAGBgCKAyAGBgCjAyAGBgDJAiAG
+BgC+A5sFBgBuArgHBgDqAbgHBgAVAyAGBgDkAmkECgANAtkGCgDVAScFCgBVAicFDgCtAY4HDgAP
+B1IHBgD9Aj8HDgCZAtcHDgCxArEABgBICZsFDgD1Bo4HDgAyA7EABgBgAZsFDgABAOsECgD4AbAF
+BgC/Bh4IBgBPBgsGCgC9AfYFBgAkAj8HEgDUA7AEEgCRAbAEBgCMBJsFCgAEAT0FBgCrBZsFBgAZ
+AZsFBgDyCSAGBgAJCf4HBgA3B1gECgCECT0FEgAVBbAEFgC3CD0BFgAQAT0BCgDZBGUJCgChCWUJ
+DgD9CNcHCgAgCT0FCgAyBj0FBgAgB5sFAAAAACsAAAAAAAEAAQAAAAAA6AW+CU0AAQABAAAAAAAN
+B74JUQABAAIAAAEQAFsJvglhAAEAAwAAAAAAYAgvCGEABQAIAAABEADBCIQAgQAHAAwAAQAAAM0F
+hACNAAkADwAFAQAAgAcAAGEACQARAAUBAAAQAAAAYQAJABgAAgEAADQJAACZAAoAGgAxAIQGHAEx
+AFsGJAExAG8GLAExAJ0GNAERABgHPAERAIUBQAERAC0ERAERAEIJSAEhALQJ2gAGBnwASwFWgBgJ
+TgFWgGUBTgFQIAAAAAAGGCoHBgABAFggAAAAAAYYKgcGAAEAYCAAAAAAERgwB1IBAQCKIAAAAAAT
+CAAHVgEBAJYgAAAAABMI2AVbAQEAoiAAAAAAEwjxBmABAQCuIAAAAAATCHAHZQEBALogAAAAAAMY
+KgcGAAEAwiAAAAAAFgi7BmoBAQDuIAAAAAAWCG0BbwEBAPUgAAAAABYIeQF0AQEA/SAAAAAAERgw
+B1IBAgAOIQAAAAAGGCoHBgACABghAAAAABYINQR6AQIAdCEAAAAABhgqBwYAAgB8IQAAAAAGANMF
+BgACAPYiAAAAAMYC9giyAAIABCMAAAAAxgL4ALcAAwAMIwAAAACDAF0BfwEDABgjAAAAAMYCgwSO
+AAMAICMAAAAAEQBpAIQBAwBAIwAAAAABAFUAjAEEALogAAAAAAYYKgcGAAUATCMAAAAAAwjfAEoA
+BQCAIwAAAAAGGCoHBgAFAAAAAQBSBAAAAQBZBgAAAQDvAAAAAQDvAAkAKgcBABEAKgcGABkAKgcK
+ACkAKgcQADEAKgcQADkAKgcQAEEAKgcQAEkAKgcQAFEAKgcQAFkAKgcVAGEAKgcVAGkAKgcQAHEA
+KgcQAHkAKgcQAIEAKgcaAJEAKgcgAKkAKgcGALEAKgcGALkAKgcGANEAKgcmAOkAKgcQAAkBKgcG
+ABEBKgcGAJkAKgcGAKEAKgcGAAwAKgcGABQAKgcGABwAKgcGACQAKgcGAAwA3wBKABQA3wBKABwA
+3wBKACQA3wBKAMEAKgcGANkAKwFPANkA7glXAPEAKgddAEkBSQRlAAEBKgcGAFEB+gZqAFEBcAlq
+ABkBKgcGAFkBKgcGACkBKgcGAFkB3AgVABkBLAl3AGEBswh9AGkBkgWDAHEBNQSKAMEAgwSOAHkB
+KgcaAFkBzAiSAIkBzwaZAFkBjwkBAFkBhAUVAFkBmAkQAJEBKgcQACkBogWeACkBSAalAJkBxwAQ
+ACkBTwkQACkBdQUVACkB5QkQAFkBywCrAGEBdQkBAMEA9giyAMEA+AC3AKEB0ADDADQAtAnaADwA
+NQRKADwAPwTxADwAKgcGAAgALAASAQgAMAAXASkAqwA+Ay4ACwC8AS4AEwDFAS4AGwDkAS4AIwDt
+AS4AKwAWAi4AMwAWAi4AOwDtAS4AQwAcAi4ASwAWAi4AUwAzAi4AWwAWAi4AYwA5Ai4AawBjAi4A
+cwBwAkAAiwAXAUAAgwC6AkMAewDDAkMAgwC6AkkAqwBPA2MAewDDAmMAgwC6AmkAqwBjA4AAiwAX
+AYMAkwAXAYMAmwAXAYMAewDDAokAqwBwA6AAiwAXAakAgwDkAcAAiwAXAckAgwDkAeAAiwAXAeMA
+uwAXAeMAUwAWAukAswAXAQMBgwC6AgMBowDcAiMBgwC6AiMBWwAWAiACgwC6AiACiwAXAUACgwC6
+AkACiwAXAWACgwC6AmACiwAXAYACgwC6AoACiwAXAaACiwAXAcACiwAXAeACiwAXAeACgwC6AgAD
+iwAXASADiwAXASADgwC6Am8AuwDOAAQAAQAFAAUABgAHAAkACAAAAA8HlAEAAOoFmQEAAPUGngEA
+AIIHowEAAL8GqAEAAIkBrQEAAFIEsgEAAOMAtwECAAQAAwACAAUABQACAAYABwACAAcACQACAAkA
+CwACAAoADQABAAsADQACAA4ADwACABgAEQAuADUAPABDAMAA0wDiAOkABIAAAAEAAAAAAAAAAAAA
+AAAAhAAAAAQAAAAAAAAAAAAAAPcAqAAAAAAABAAAAAAAAAAAAAAA9wCbBQAAAAAKAAAAAAAAAAAA
+AAAAAbEAAAAAAA8AAAAAAAAAAAAAAAkBkQQAAAAADwAAAAAAAAAAAAAACQE0AAAAAAAAAAAAAQAA
+AGwIAAAIAAQACQAEAAoABwAAABAAEgBTAAAAEAArAFMAAAAAAC0AUwCJAMkAiQDsAAAAAAAAQ29u
+dGV4dFZhbHVlYDEAVGhyZWFkU2FmZU9iamVjdFByb3ZpZGVyYDEAPE1vZHVsZT4ATWljcm9zb2Z0
+LlNxbFNlcnZlci5NYW5hZ2VkRFRTAFQARGlzcG9zZV9fSW5zdGFuY2VfXwBDcmVhdGVfX0luc3Rh
+bmNlX18AdmFsdWVfXwBTVF84Mzk0MWE0ZGM5OTQ0MjIwODVlZDhhMWExYjE3Y2Q4YQBtc2Nvcmxp
+YgBNaWNyb3NvZnQuVmlzdWFsQmFzaWMAQWRkAFNlbmQAQ3JlYXRlSW5zdGFuY2UAZ2V0X0dldElu
+c3RhbmNlAGluc3RhbmNlAEdldEhhc2hDb2RlAE1haWxNZXNzYWdlAFZhcmlhYmxlAFJ1bnRpbWVU
+eXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlJ1bnRp
+bWUAR2V0VHlwZQBGYWlsdXJlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAF9yZXNDdWx0dXJlAFZT
+VEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBBcHBsaWNhdGlvbkJhc2UAQXBwbGljYXRpb25TZXR0
+aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAR3VpZEF0dHJpYnV0ZQBIZWxwS2V5d29yZEF0
+dHJpYnV0ZQBHZW5lcmF0ZWRDb2RlQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1
+dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQ29tVmlzaWJs
+ZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAFN0YW5kYXJkTW9kdWxlQXR0cmlidXRl
+AEhpZGVNb2R1bGVOYW1lQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdl
+dEZyYW1ld29ya0F0dHJpYnV0ZQBEZWJ1Z2dlckhpZGRlbkF0dHJpYnV0ZQBBc3NlbWJseUZpbGVW
+ZXJzaW9uQXR0cmlidXRlAE15R3JvdXBDb2xsZWN0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3Jp
+cHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVBy
+b2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAQ0xTQ29tcGxpYW50QXR0
+cmlidXRlAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlB
+dHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAbV9WYWx1ZQBnZXRfVmFsdWUA
+c2V0X1ZhbHVlAEdldE9iamVjdFZhbHVlAFN5c3RlbS5UaHJlYWRpbmcAU3lzdGVtLlJ1bnRpbWUu
+VmVyc2lvbmluZwBUb1N0cmluZwBNYXRoAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFzawBN
+aWNyb3NvZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAE5ldHdvcmtDcmVkZW50aWFs
+AE1pY3Jvc29mdC5WaXN1YWxCYXNpYy5NeVNlcnZpY2VzLkludGVybmFsAFNjcmlwdE9iamVjdE1v
+ZGVsAFN5c3RlbS5Db21wb25lbnRNb2RlbABTeXN0ZW0uTmV0Lk1haWwAU1RfODM5NDFhNGRjOTk0
+NDIyMDg1ZWQ4YTFhMWIxN2NkOGEuZGxsAHNldF9Jc0JvZHlIdG1sAHNldF9FbmFibGVTc2wAZ2V0
+X0l0ZW0AU3lzdGVtAHNldF9Gcm9tAEVudW0AU3lzdGVtLkNvbXBvbmVudE1vZGVsLkRlc2lnbgBT
+Y3JpcHRNYWluAGdldF9BcHBsaWNhdGlvbgBNeUFwcGxpY2F0aW9uAFN5c3RlbS5Db25maWd1cmF0
+aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAE1haWxBZGRyZXNzQ29s
+bGVjdGlvbgBnZXRfVG8AQ3VsdHVyZUluZm8AbV9BcHBPYmplY3RQcm92aWRlcgBtX1VzZXJPYmpl
+Y3RQcm92aWRlcgBtX0NvbXB1dGVyT2JqZWN0UHJvdmlkZXIAbV9NeVdlYlNlcnZpY2VzT2JqZWN0
+UHJvdmlkZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgBUb0ludGVnZXIAU3lzdGVtLkNvZGVEb20uQ29t
+cGlsZXIAZ2V0X1VzZXIARW50ZXIAZ2V0X0NvbXB1dGVyAE15Q29tcHV0ZXIAX3Jlc01ncgBBY3Rp
+dmF0b3IALmN0b3IALmNjdG9yAE1vbml0b3IAU3lzdGVtLkRpYWdub3N0aWNzAE1pY3Jvc29mdC5W
+aXN1YWxCYXNpYy5EZXZpY2VzAGdldF9XZWJTZXJ2aWNlcwBNeVdlYlNlcnZpY2VzAE1pY3Jvc29m
+dC5WaXN1YWxCYXNpYy5BcHBsaWNhdGlvblNlcnZpY2VzAFN5c3RlbS5SdW50aW1lLkludGVyb3BT
+ZXJ2aWNlcwBNaWNyb3NvZnQuVmlzdWFsQmFzaWMuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUnVu
+dGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfODM5NDFhNGRjOTk0NDIy
+MDg1ZWQ4YTFhMWIxN2NkOGEuTXkuUmVzb3VyY2VzAE15UmVzb3VyY2VzAFNUXzgzOTQxYTRkYzk5
+NDQyMjA4NWVkOGExYTFiMTdjZDhhLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMA
+Z2V0X1ZhcmlhYmxlcwBNeVNldHRpbmdzAHNldF9DcmVkZW50aWFscwBzZXRfVXNlRGVmYXVsdENy
+ZWRlbnRpYWxzAEVxdWFscwBDb252ZXJzaW9ucwBSdW50aW1lSGVscGVycwBTdWNjZXNzAE1haWxB
+ZGRyZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0cwBtX1N5bmNPYmplY3QAc2V0X1N1YmplY3QATXlQ
+cm9qZWN0AFN5c3RlbS5OZXQARXhpdABzZXRfVGFza1Jlc3VsdABTbXRwQ2xpZW50AHNldF9Qb3J0
+AHNldF9Ib3N0AElDcmVkZW50aWFsc0J5SG9zdABtX0NvbnRleHQAU1RfODM5NDFhNGRjOTk0NDIy
+MDg1ZWQ4YTFhMWIxN2NkOGEuTXkAc2V0X0JvZHkAZ2V0X0Fzc2VtYmx5AAAAMU0AeQAuAFIAZQBz
+AG8AdQByAGMAZQBzAC4ATQB5AFIAZQBzAG8AdQByAGMAZQBzAAAlVQBzAGUAcgA6ADoAUwBNAFQA
+UABVAHMAZQByAG4AYQBtAGUAACVVAHMAZQByADoAOgBTAE0AVABQAFAAYQBzAHMAdwBvAHIAZAAA
+HVUAcwBlAHIAOgA6AFMATQBUAFAAUABvAHIAdAAAIVUAcwBlAHIAOgA6AFMATQBUAFAAUwBlAHIA
+dgBlAHIAABVVAHMAZQByADoAOgBGAHIAbwBtAAARVQBzAGUAcgA6ADoAVABvAAAbVQBzAGUAcgA6
+ADoAUwB1AGIAagBlAGMAdAAAI1UAcwBlAHIAOgA6AE0AZQBzAHMAYQBnAGUAQgBvAGQAeQAAAAYe
+LY8QK6NDhQwjGlPq6h8ABCABAQgDIAABBSABARERBCABAQ4EIAEBAgUgAgEODgUgAQERRQcgBAEO
+Dg4OBhUSJAESDAYVEiQBEggGFRIkARJlBhUSJAESIAQgABMABwABEm0RgJ0FIAASgKEHIAIBDhKA
+oQQAARwcBAABARwHBwMSgJUODgUgABKAsQUgABKAtQYgARKAuRwDIAAcAyAADgYgAQESgMEEAAEI
+HAYgAQESgMkFIAASgM0GIAEBEoCVBCABAhwDIAAIBAcBHgACHgAFEAEAHgAECgEeAAQHARMABhUS
+JAETAAcGFRJxARMABhUScQETAAITAAQKARMABSABARMACLd6XFYZNOCJCLA/X38R1Qo6CImEXc2A
+gMyRBAAAAAAEAQAAAAcGFRIkARIMBwYVEiQBEggHBhUSJAESZQcGFRIkARIgAwYSeQMGEn0DBhIY
+AgYcAgYIAwYRKAMAAAEEAAASDAQAABIIBAAAEmUEAAASIAQAABJ5BAAAEn0FAAEBEn0EAAASGAQg
+ABJtBxABAR4AHgAHMAEBARAeAAQIABIMBAgAEggECAASZQQIABIgBAgAEnkECAASfQQIABIYBCgA
+EwAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NU
+XzgzOTQxYTRkYzk5NDQyMjA4NWVkOGExYTFiMTdjZDhhAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAg
+IDIwMjEAAAUBAAEAACkBACRiMTI1NmY3NS1kODliLTRkZmYtYTJlZS02NzZhM2NmNDBmMDUAAAwB
+AAcxLjAuMC4wAABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rp
+c3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwgBAAEAAAAAABgBAApNeVRlbXBsYXRlCDExLjAu
+MC4wAABhAQA0U3lzdGVtLldlYi5TZXJ2aWNlcy5Qcm90b2NvbHMuU29hcEh0dHBDbGllbnRQcm90
+b2NvbBJDcmVhdGVfX0luc3RhbmNlX18TRGlzcG9zZV9fSW5zdGFuY2VfXwAAABABAAtNeS5Db21w
+dXRlcgAAEwEADk15LkFwcGxpY2F0aW9uAAAMAQAHTXkuVXNlcgAAEwEADk15LldlYlNlcnZpY2Vz
+AAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29y
+bGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3
+YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAA
+AAAAAFBBRFBBRFC0AAAA1DsAAAAAAAAAAAAA7jsAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA7
+AAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
+EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
+QAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
+7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
+AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
+AACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAAMAA0
+AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
+YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBU
+AF8AOAAzADkANAAxAGEANABkAGMAOQA5ADQANAAyADIAMAA4ADUAZQBkADgAYQAxAGEAMQBiADEA
+NwBjAGQAOABhAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAw
+AAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQAXwA4ADMAOQA0ADEAYQA0AGQA
+YwA5ADkANAA0ADIAMgAwADgANQBlAGQAOABhADEAYQAxAGIAMQA3AGMAZAA4AGEALgBkAGwAbAAA
+AEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAA
+QAAgACAAMgAwADIAMQAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAA
+AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAVABfADgAMwA5ADQA
+MQBhADQAZABjADkAOQA0ADQAMgAyADAAOAA1AGUAZAA4AGEAMQBhADEAYgAxADcAYwBkADgAYQAu
+AGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAFQAXwA4ADMAOQA0ADEA
+YQA0AGQAYwA5ADkANAA0ADIAMgAwADgANQBlAGQAOABhADEAYQAxAGIAMQA3AGMAZAA4AGEAAAA0
+AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEA
+QQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAAA8AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
+                </ScriptProject>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Log Errors"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{4488ed96-cdaf-4fc6-b2ee-cfd2909a0af2}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log Errors"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="SqlStatementSource">"insert into Error_Logs values ('"+ @[System::MachineName] + "', '"+ @[System::PackageName] +"', '"+ @[System::SourceName] +"', "+ (DT_WSTR,30)@[System::ErrorCode] +",'"+ @[System::ErrorDescription] +"', getdate())"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{01EB4E36-B384-4180-8C40-90A29B5B62C7}"
+                  SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-LONCI57', 'Package1', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -5256,13 +6185,17 @@
           Id="Package\Automation Rest API"
           TopLeft="567,295.083332520806" />
         <NodeLayout
+          Size="167.5,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="511.666666666667,107.731480946373" />
+        <NodeLayout
           Size="172,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse"
           TopLeft="26,27.7083332230233" />
         <NodeLayout
           Size="181.5,42"
           Id="Package\Load Data to Snowflake\Loading DimInstructor"
-          TopLeft="222.5,27.3333324400915" />
+          TopLeft="223,26.7916657761154" />
         <NodeLayout
           Size="155.5,42"
           Id="Package\Load Data to Snowflake\Loading Student"
@@ -5270,8 +6203,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="448.5,194.5"
-          Size="448.5,237.5"
+          PanelSize="448.5,215.5"
+          Size="448.5,258.5"
           Id="Package\Load Data to Snowflake"
           TopLeft="33,71.4999996448552" />
         <NodeLayout
@@ -5280,18 +6213,18 @@
           TopLeft="182,396.499998030563" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="254.5,308.999999644855">
+          TopLeft="254.5,329.999999644855">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,87.4999983857081"
+              EndConnector="0,66.4999983857081"
               Start="0,0"
-              End="0,79.9999983857081">
+              End="0,58.9999983857081">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,79.9999983857081" />
+                    End="0,58.9999983857081" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5325,6 +6258,29 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Error Message"
+          TopLeft="55,48.3333332472377" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail\Log Errors"
+          TopLeft="237.5,49.6666665590472" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="465,151"
+          Size="465,194"
+          Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail"
+          TopLeft="229,119.166666074759" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\Load Data to Snowflake\Loading DimCourse">
     <LayoutInfo>
@@ -5927,104 +6883,46 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="127,42"
-          Id="Package\Load Data to Snowflake\Loading Student\DWHouse"
-          TopLeft="154.285714285714,424.285714285714" />
+          Size="120.5,42"
+          Id="Package\Load Data to Snowflake\Loading Student\Stagging"
+          TopLeft="428.571428571429,479.285714285714" />
         <NodeLayout
           Size="200,42"
           Id="Package\Load Data to Snowflake\Loading Student\Source Course Snowflake"
           TopLeft="519.642857142857,94" />
         <NodeLayout
-          Size="98.5,42"
-          Id="Package\Load Data to Snowflake\Loading Student\Sort"
-          TopLeft="253.5,181" />
+          Size="107,42"
+          Id="Package\Load Data to Snowflake\Loading Student\Sort 1"
+          TopLeft="566.5,187" />
         <NodeLayout
           Size="131,42"
           Id="Package\Load Data to Snowflake\Loading Student\Merge Join"
           TopLeft="389.5,269" />
         <NodeLayout
-          Size="120.5,42"
-          Id="Package\Load Data to Snowflake\Loading Student\Stagging"
-          TopLeft="428.571428571429,479.285714285714" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Load Data to Snowflake\Loading Student\Sort 1"
-          TopLeft="566.5,187" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Load Data to Snowflake\Loading Student\Conditional Split"
-          TopLeft="383,361.5" />
-        <NodeLayout
           Size="134,42"
           Id="Package\Load Data to Snowflake\Loading Student\DimStudent"
           TopLeft="242.47619047619,94.1666666666667" />
-        <EdgeLayout
-          Id="Package\Load Data to Snowflake\Loading Student.Paths[Merge Join Output]"
-          TopLeft="457.75,311">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.5"
-              Start="0,0"
-              End="0,43">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Data to Snowflake\Loading Student.Paths[DW is empty]"
-          TopLeft="383,382.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-101.714285714286,62.785714285714"
-              Start="0,0"
-              End="-94.214285714286,62.785714285714">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-46.857142857143,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46.857142857143,0"
-                    Point2="-50.857142857143,0"
-                    Point3="-50.857142857143,4" />
-                  <mssgle:LineSegment
-                    End="-50.857142857143,58.785714285714" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-50.857142857143,58.785714285714"
-                    Point2="-50.857142857143,62.785714285714"
-                    Point3="-54.857142857143,62.785714285714" />
-                  <mssgle:LineSegment
-                    End="-94.214285714286,62.785714285714" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-79.634076450893,-17.3310546875,57.5538671875,11.3310546875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Load Data to Snowflake\Loading Student\Conditional Split"
+          TopLeft="384.5,361.5" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Load Data to Snowflake\Loading Student\DWHouse"
+          TopLeft="154.285714285714,424.285714285714" />
+        <NodeLayout
+          Size="98.5,42"
+          Id="Package\Load Data to Snowflake\Loading Student\Sort"
+          TopLeft="253.5,181" />
         <EdgeLayout
           Id="Package\Load Data to Snowflake\Loading Student.Paths[Update data]"
-          TopLeft="460.5,403.5">
+          TopLeft="462,403.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.321428571429,75.785714285714"
+              EndConnector="26.821428571429,75.785714285714"
               Start="0,0"
-              End="28.321428571429,68.285714285714">
+              End="26.821428571429,68.285714285714">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -6035,20 +6933,20 @@
                     Point2="0,37.892857142857"
                     Point3="4,37.892857142857" />
                   <mssgle:LineSegment
-                    End="24.321428571429,37.892857142857" />
+                    End="22.821428571429,37.892857142857" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.321428571429,37.892857142857"
-                    Point2="28.321428571429,37.892857142857"
-                    Point3="28.321428571429,41.892857142857" />
+                    Point1="22.821428571429,37.892857142857"
+                    Point2="26.821428571429,37.892857142857"
+                    Point3="26.821428571429,41.892857142857" />
                   <mssgle:LineSegment
-                    End="28.321428571429,68.285714285714" />
+                    End="26.821428571429,68.285714285714" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-13.1865904017855,42.892857142857,54.694609375,11.609375"
+              BoundingBox="-13.9365904017855,42.892857142857,54.694609375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6164,11 +7062,69 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data to Snowflake\Loading Student.Paths[Merge Join Output]"
+          TopLeft="458.5,311">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.5"
+              Start="0,0"
+              End="0,43">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Data to Snowflake\Loading Student.Paths[DW is empty]"
+          TopLeft="384.5,382.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-103.214285714286,62.785714285714"
+              Start="0,0"
+              End="-95.714285714286,62.785714285714">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-47.607142857143,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-47.607142857143,0"
+                    Point2="-51.607142857143,0"
+                    Point3="-51.607142857143,4" />
+                  <mssgle:LineSegment
+                    End="-51.607142857143,58.785714285714" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-51.607142857143,58.785714285714"
+                    Point2="-51.607142857143,62.785714285714"
+                    Point3="-55.607142857143,62.785714285714" />
+                  <mssgle:LineSegment
+                    End="-95.714285714286,62.785714285714" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-80.384076450893,-17.3310546875,57.5538671875,11.3310546875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Data to Snowflake\Loading Student\DWHouse">
+    design-time-name="Package\Load Data to Snowflake\Loading Student\Stagging">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6194,7 +7150,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Data to Snowflake\Loading Student\Stagging">
+    design-time-name="Package\Load Data to Snowflake\Loading Student\DimStudent">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6207,7 +7163,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Data to Snowflake\Loading Student\DimStudent">
+    design-time-name="Package\Load Data to Snowflake\Loading Student\DWHouse">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6238,14 +7194,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,88.7692307692307"
+              EndConnector="0,88.7692307692305"
               Start="0,0"
-              End="0,81.2692307692307">
+              End="0,81.2692307692305">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,81.2692307692307" />
+                    End="0,81.2692307692305" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
