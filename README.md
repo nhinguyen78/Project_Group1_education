@@ -2,9 +2,9 @@
 
 Dear trainers and everyone,
 
-This is Group 1’s GitHub on the first project of as FA Fresher by Nhi and Tram. Our project topic for today is Evaluating class quality based on teachers, students, subject information and feedback.
+This is Group 1’s GitHub on the first project of as FA Fresher by Minh (Duy-deliver) and Huy Anh ( Anh Huy Ha) . Our project topic for today is Evaluating class quality based on teachers, students, subject information and feedback.
 
-The scenario: One very well-known education center X has one dataset of the students’ reviews.   This company wants to analyze the class quality by student feedback based on their report card.
+The scenario: One very well-known education center X has one dataset of the students’ reviews. This company wants to analyze the class quality by student feedback based on their report card.
 
 The Guideline:
 - Here is the roadmap of what we do from generating data to visualizing them.
@@ -27,7 +27,7 @@ How to setup
 1. Use the raw data in raw-code
 2. Login MSSQL and run the script
 3. Authen Snowflake and run
-Please click [Snowflake](https://ob27530.southeast-asia.azure.snowflakecomputing.com/)
+Please click [Snowflake](https://cf43998.southeast-asia.azure.snowflakecomputing.com/console#/partner)
 
 User for trainer 1: longbv1
 Password: Password@1
