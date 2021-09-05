@@ -12,14 +12,14 @@ CREATE TABLE DimCourse
 CREATE TABLE DimInstructor (
     [Instructor_ID] INT IDENTITY(1,1) PRIMARY KEY,
     [Instructor_Name] varchar(50),
+    [Instructor_rank] varchar(50),
+	[Ranked_change] bit
 )
-
 
 CREATE TABLE DimStudent(
 	[Student_ID] INT IDENTITY(1,1) PRIMARY KEY, 
 	[Student_Name] varchar(50), 
 	[Date_of_birth] varchar(50),
-	[Email] varchar(50),
     [Gender] varchar(50),
     [Rating_class] varchar(50),
     [Class_recommendation] varchar(50),
@@ -29,7 +29,7 @@ CREATE TABLE DimStudent(
 	[EndDate] datetime
 )
 
-CREATE TABLE TransactionData (
+CREATE TABLE FactTransaction (
     [Transaction_ID] INT IDENTITY(1,1) PRIMARY KEY,
     [Instructor_Name] varchar(50),
     [Student_Name] varchar(50),
