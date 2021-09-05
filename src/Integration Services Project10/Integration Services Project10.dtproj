@@ -2,11 +2,7 @@
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DeploymentModel>Project</DeploymentModel>
 <<<<<<< HEAD
-<<<<<<< HEAD
   <ProductVersion>15.0.2000.170</ProductVersion>
-=======
-  <ProductVersion>15.0.2000.166</ProductVersion>
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
   <ProductVersion>15.0.2000.166</ProductVersion>
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -35,11 +31,7 @@
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
 <<<<<<< HEAD
-<<<<<<< HEAD
           <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGI2/OuDfsESDOI8xsjCWJQAAAAACAAAAAAAQZgAAAAEAACAAAAACaPIg+2zb3g7yE85siEWvSVpMRtYYFf5onNI77xkxNQAAAAAOgAAAAAIAACAAAADbA5pJeWcNQfBvynltFAjYMEZXTZOm+Ndw96vTjdjV/5AAAAAhHMkLMaGkYV1l082MNoYGqJV7T7U4yYwB7e7l7BElidQdhn9L4Mj918Q3rarl1wzU+JZjRAK/VG9CItwZKCxncGs4tqzjarpnOxAtuYFNV5jZ5zwsGlXEnT9P+1dZR+X2hObnJ3fGIYGApB1nxFELqhxkn3a5totiKnQ6FQ48LMs5NAT0IDvJy6q+Lf4XucxAAAAAVC07RVcD1IpYeYdsH1WL+4/1iTTMLw9BaVxYX6PGzmVc+1GJcMRZgSga/IZX0gz1zUbhQtGolnzxrQbUqOV07Q==</SSIS:Property>
-=======
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACP2VaCvJbUyTYHupngyDdQAAAAACAAAAAAAQZgAAAAEAACAAAAAqwnPcwVyRvlEFvyrFArfeRPbhCj7ZzFCUnQ556cSLsQAAAAAOgAAAAAIAACAAAADXaGqvXjilztK4cPqJ+Y6yE3PhWTVSiB78fmYXSk77+JAAAACv8Uz/r1OSw2hHkXOc2dalSJK7ioVVYyPrkZZ0iuYcFhhbBZfdEXUSIuxdNozgmxqjBUKdX5ItMaIiyyJQ15OUpWREHxilhtm8sIj9f7TicwiwTc//IWN/1CMLqtSi3AwDFTgZTT9D6WNkoANQa6ittDY+ep4erDccQElmszmByg5oj8XqarUSJkGiotRX1KpAAAAAu8AoVCx9ggFjIup1mnwI38+KTyVbZc5T1rHsGOZUVn+V0AONgZmgnQirvOhpXEOyJuSZ0/0Sw+bGd6RK38VPtQ==</SSIS:Property>
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
           <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACP2VaCvJbUyTYHupngyDdQAAAAACAAAAAAAQZgAAAAEAACAAAAAqwnPcwVyRvlEFvyrFArfeRPbhCj7ZzFCUnQ556cSLsQAAAAAOgAAAAAIAACAAAADXaGqvXjilztK4cPqJ+Y6yE3PhWTVSiB78fmYXSk77+JAAAACv8Uz/r1OSw2hHkXOc2dalSJK7ioVVYyPrkZZ0iuYcFhhbBZfdEXUSIuxdNozgmxqjBUKdX5ItMaIiyyJQ15OUpWREHxilhtm8sIj9f7TicwiwTc//IWN/1CMLqtSi3AwDFTgZTT9D6WNkoANQa6ittDY+ep4erDccQElmszmByg5oj8XqarUSJkGiotRX1KpAAAAAu8AoVCx9ggFjIup1mnwI38+KTyVbZc5T1rHsGOZUVn+V0AONgZmgnQirvOhpXEOyJuSZ0/0Sw+bGd6RK38VPtQ==</SSIS:Property>
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -59,17 +51,10 @@
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Property SSIS:Name="VersionBuild">183</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionGUID">{3155F587-E4F8-4D9C-9AF6-45857B7351DB}</SSIS:Property>
-=======
-                <SSIS:Property SSIS:Name="VersionBuild">119</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{063749CE-E218-4E5C-8C4C-A67B6C4C78BD}</SSIS:Property>
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Property SSIS:Name="VersionBuild">119</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
@@ -83,11 +68,8 @@
               </SSIS:Properties>
               <SSIS:Parameters>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ConnectByProxy">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                 <SSIS:Parameter SSIS:Name="CM.Course.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -5671,9 +5653,6 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectByProxy">
-<<<<<<< HEAD
->>>>>>> parent of 03ba12d (- Update SSIS Package)
-=======
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -5690,11 +5669,7 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ConnectionString">
-=======
-                <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectionString">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectionString">
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -5709,23 +5684,17 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
 <<<<<<< HEAD
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-5EO5NDK\MSSQLSERVER01;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ConnectRetryCount">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                     <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectRetryCount">
-<<<<<<< HEAD
->>>>>>> parent of 03ba12d (- Update SSIS Package)
-=======
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -5742,11 +5711,7 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ConnectRetryInterval">
-=======
-                <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectRetryInterval">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectRetryInterval">
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -5765,11 +5730,7 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ConnectUsingManagedIdentity">
-=======
-                <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectUsingManagedIdentity">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.ConnectUsingManagedIdentity">
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -5788,11 +5749,7 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.InitialCatalog">
-=======
-                <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.InitialCatalog">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.InitialCatalog">
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -5811,11 +5768,7 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.Password">
-=======
-                <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.Password">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
 =======
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.Password">
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
@@ -5833,11 +5786,8 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.RetainSameConnection">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                 <SSIS:Parameter SSIS:Name="CM.localhost.EducationData.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -5928,9 +5878,6 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData.ConnectByProxy">
-<<<<<<< HEAD
->>>>>>> parent of 03ba12d (- Update SSIS Package)
-=======
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -5947,11 +5894,8 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.ServerName">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                 <SSIS:Parameter SSIS:Name="CM.RawData.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -6044,9 +5988,6 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData.RowDelimiter">
-<<<<<<< HEAD
->>>>>>> parent of 03ba12d (- Update SSIS Package)
-=======
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -6058,7 +5999,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
 <<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">DESKTOP-5EO5NDK\MSSQLSERVER01</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
@@ -6066,17 +6006,12 @@
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData.UserName">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                     <SSIS:Property SSIS:Name="Value">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData.TextQualifier">
-<<<<<<< HEAD
->>>>>>> parent of 03ba12d (- Update SSIS Package)
-=======
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -6089,14 +6024,11 @@
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
 <<<<<<< HEAD
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.DESKTOP-LONCI57\SQLEXPRESS.EducationData.ConnectByProxy">
 =======
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                     <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
@@ -6162,7 +6094,6 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.Student.ConnectByProxy">
-<<<<<<< HEAD
 >>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -6558,8 +6489,6 @@
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.ConnectByProxy">
-=======
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6574,11 +6503,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.ConnectionString">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.ConnectionString">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6589,19 +6514,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">C:\Users\mytra\Downloads\Integration Services Project10 - Copy\csv from SQL server\TransactionData.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.DataRowsToSkip">
-=======
-                    <SSIS:Property SSIS:Name="Value">C:\Users\mytra\Downloads\Integration Services Project10 - Copy\csv from SQL server\Student.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Student.DataRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6616,11 +6533,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.Format">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.Format">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6635,11 +6548,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.HeaderRowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.HeaderRowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6655,11 +6564,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.HeaderRowsToSkip">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.HeaderRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6674,11 +6579,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.LocaleID">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.LocaleID">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6693,11 +6594,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.RowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.RowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6713,11 +6610,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.TextQualifier">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.TextQualifier">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6732,11 +6625,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.TransactionData.Unicode">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Student.Unicode">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6751,11 +6640,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.AlwaysCheckForRowDelimiters">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.AlwaysCheckForRowDelimiters">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6770,11 +6655,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.CodePage">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.CodePage">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6789,11 +6670,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.ColumnNamesInFirstDataRow">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.ColumnNamesInFirstDataRow">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6804,19 +6681,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData01.ConnectByProxy">
-=======
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Transaction.ConnectByProxy">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6831,11 +6700,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.ConnectionString">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.ConnectionString">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6846,19 +6711,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">C:\Users\17737\Desktop\Project_Group1_education-master\resources\RawData.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData01.DataRowsToSkip">
-=======
-                    <SSIS:Property SSIS:Name="Value">C:\Users\mytra\Downloads\Integration Services Project10 - Copy\csv from SQL server\Transaction.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Transaction.DataRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6873,11 +6730,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.Format">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.Format">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6892,11 +6745,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.HeaderRowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.HeaderRowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6912,11 +6761,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.HeaderRowsToSkip">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.HeaderRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6931,11 +6776,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.LocaleID">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.LocaleID">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6950,11 +6791,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.RowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.RowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6970,11 +6807,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData01.TextQualifier">
-=======
-                <SSIS:Parameter SSIS:Name="CM.Transaction.TextQualifier">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -6985,19 +6818,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData01.Unicode">
-=======
-                    <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Transaction.Unicode">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7012,11 +6837,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.AlwaysCheckForRowDelimiters">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.AlwaysCheckForRowDelimiters">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7031,11 +6852,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.CodePage">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.CodePage">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7050,11 +6867,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.ColumnNamesInFirstDataRow">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.ColumnNamesInFirstDataRow">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7065,15 +6878,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.ConnectByProxy">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.ConnectByProxy">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7088,11 +6897,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.ConnectionString">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.ConnectionString">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7103,19 +6908,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-<<<<<<< HEAD
                     <SSIS:Property SSIS:Name="Value">C:\Users\17737\Desktop\Project_Group1_education-master\resources\RawData.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.RawData1.DataRowsToSkip">
-=======
-                    <SSIS:Property SSIS:Name="Value">C:\Users\mytra\Downloads\Integration Services Project10 - Copy\csv from SQL server\TransactionData.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.DataRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7130,11 +6927,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.Format">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.Format">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7149,11 +6942,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.HeaderRowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.HeaderRowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7169,11 +6958,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.HeaderRowsToSkip">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.HeaderRowsToSkip">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7188,11 +6973,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.LocaleID">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.LocaleID">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7207,11 +6988,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.RowDelimiter">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.RowDelimiter">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7227,11 +7004,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.TextQualifier">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.TextQualifier">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -7242,15 +7015,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">"</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-<<<<<<< HEAD
                 <SSIS:Parameter SSIS:Name="CM.RawData1.Unicode">
-=======
-                <SSIS:Parameter SSIS:Name="CM.TransactionData.Unicode">
->>>>>>> parent of 03ba12d (- Update SSIS Package)
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
