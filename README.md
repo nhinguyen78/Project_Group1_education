@@ -11,11 +11,11 @@ The Guideline:
 
 ![Roadmap](https://github.com/nhinguyen78/Project_Group1_education/blob/master/DataRoadMap.jpg)
 
-- First of all, what we do is we generate data by Python code as OLTP data and we save it as a .csv file, named (untitled folder_CoursesData-2021_08_13-10_53_41_PM.csv)
+- First of all, what we do is we generate data by Python code as OLTP data and we save it as a .csv file, named (untitled RawData.csv)
 
 - Second, we create data pipeline in SQL Server Integration Services (SSIS), which is we load the .csv file. From the file, we ETL it to other Dim tables such as Dim Instructor, Dim Student, Dim Course. Each dims have their unique Primary key in order to create relationship with the Fact table later.
 
-- After the data in all dims has been transformed, we load them to the Cloud destination, called Snowflake. Our server name is: ob27530.southeast-asia.azure.snowflakecomputing.com
+- After the data in all dims has been transformed, we load them to the Cloud destination, called Snowflake. Our server name is: cf43998.southeast-asia.azure.snowflakecomputing.com
 
 - After all dims are all there, we will load the big Fact table on the Cloud too.
 
