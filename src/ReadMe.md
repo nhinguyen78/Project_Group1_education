@@ -19,7 +19,7 @@
 ## Step 2: Config file Bat 
 - [config](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/snowsql/config "config"): Set up your config file `C:\Users\Admin\.snowsql\config` with the same ( you can   
 drag and drop for overwrite ) 
-- [snowPut.bat](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/snowsql/snowPut.bat "snowPut.bat") : `"C:\Program Files\Snowflake SnowSQL\snowsql" -c hank0720 -f C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\RunFile\ssisPut.sql` change suitable path file with C:\*\ is locate file [ssisPut.sql](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/RunFile/ssisPut.sql)
+- [snowPut.bat](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/snowsql/snowPut.bat "snowPut.bat") : `"C:\Program Files\Snowflake SnowSQL\snowsql" -c hank0720 -f C:\Users\Admin\Desktop\RunFile\ssisPut.sql` change suitable path file with C:\*\ is locate file ssisPut.sql 
 
 ## Step 03: Parameter and Varaible in SSIS Project
 **Parameter**

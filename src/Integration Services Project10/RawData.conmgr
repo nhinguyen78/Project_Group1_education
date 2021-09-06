@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="RawData"
-  DTS:DTSID="{19CCCD07-9808-478F-8D2B-3699E48FEB0A}"
+  DTS:DTSID="{96E734A0-2D8C-4CC0-AC65-3AB93B03649D}"
   DTS:CreationName="FLATFILE">
   <DTS:PropertyExpression
     DTS:Name="ConnectionString">@[$Project::RawData]</DTS:PropertyExpression>
@@ -14,7 +14,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\RawData.csv">
+      DTS:ConnectionString="C:\Users\Admin\Desktop\Project_Group1_education-Group02\resources\RawData.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -23,7 +23,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Transaction_ID"
-          DTS:DTSID="{1A255F77-1451-462E-9A67-491AF69DBF6E}"
+          DTS:DTSID="{5CF19C2F-87DB-45BD-A783-2FA521046F88}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -32,7 +32,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Instructor_Name"
-          DTS:DTSID="{B94F5FB7-45F2-44D8-B4E2-C940BBD2FC60}"
+          DTS:DTSID="{4EF3AD41-5770-4CB9-845D-53739655CE75}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -41,7 +41,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Date_of_Birth"
-          DTS:DTSID="{C6B36AB3-C4FE-484D-AB38-033A264FCFEF}"
+          DTS:DTSID="{E528B8AE-6DE9-4657-8A0D-79AFB90E8908}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Course_Name"
-          DTS:DTSID="{BC5869C6-0A65-4B95-BBE8-7B16928D1C1D}"
+          DTS:DTSID="{61E97578-D860-4FAE-BC01-BDD7FC183177}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Gender"
-          DTS:DTSID="{04191D62-9DF1-4CEB-89C4-89FFA230E448}"
+          DTS:DTSID="{CEF5E5EE-A000-4088-B7E7-42F8810AAC65}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Rating_class"
-          DTS:DTSID="{C6A95623-F717-488C-95B7-BD6B00E80FF4}"
+          DTS:DTSID="{ED6EC9C6-4593-4AF1-9BA4-91F629586B03}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Student_Name"
-          DTS:DTSID="{C90A8369-0078-4D96-935D-57741203B7FA}"
+          DTS:DTSID="{68D12377-6877-4AC7-8A94-B2B1C9AA2087}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Class_recommendation"
-          DTS:DTSID="{19C0853A-0DFC-4B73-9FB0-7481FE364CB7}"
+          DTS:DTSID="{16E9DF13-1CD7-4C35-BF96-BD68A1D9E815}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Email"
-          DTS:DTSID="{4FFF24C0-0F7B-4800-B4D1-247DEC62D722}"
+          DTS:DTSID="{56C5D856-23A6-4B25-9C37-8EF6FAC9F23A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Instructor_rating"
-          DTS:DTSID="{8DCBC045-99F6-412C-862A-218AFAEB539B}"
+          DTS:DTSID="{FCFA6904-EEA3-4731-AC53-9DEC05FABA62}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -113,16 +113,16 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Final_Score"
-          DTS:DTSID="{EB2D7E62-268A-4E64-923E-AB3685078913}"
+          DTS:DTSID="{4F743A15-2BE4-47EE-880F-B93376F95114}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
-          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:ColumnDelimiter="_x000A_"
           DTS:MaximumWidth="50"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Registered_date"
-          DTS:DTSID="{A20662C7-7027-4B52-AF2C-3959CE1878EA}"
+          DTS:DTSID="{F3DD5E02-1D48-400F-9C44-57FE17122F24}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

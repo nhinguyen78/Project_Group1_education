@@ -16,7 +16,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\CourseAudit.txt</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Audit files\CourseAudit.txt</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -37,7 +37,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\InstructorAudit.txt</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Audit files\InstructorAudit.txt</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -58,7 +58,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\FactTransactionAudit.txt</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Audit files\FactTransactionAudit.txt</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -79,7 +79,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\TransactionAudit.txt</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Audit files\TransactionAudit.txt</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -100,7 +100,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\Audit files\StudentAudit.txt</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Audit files\StudentAudit.txt</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -113,7 +113,7 @@
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Description">Fact Transaction file CSV</SSIS:Property>
+        SSIS:Name="Description">Fact Transaction file CSV in Folder Run File</SSIS:Property>
       <SSIS:Property
         SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
       <SSIS:Property
@@ -121,28 +121,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\FactTransaction.csv</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
-    SSIS:Name="DataLog">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{45038d8e-1eff-4bd6-829d-6360634eb432}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description">Data Log</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">1</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Integration Services Project10\DataLog</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\RunFile\FactTransaction.csv</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -155,7 +134,7 @@
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Description">Raw Data file CSV</SSIS:Property>
+        SSIS:Name="Description">Raw Data file CSV in resources</SSIS:Property>
       <SSIS:Property
         SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
       <SSIS:Property
@@ -163,7 +142,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\resources\RawData.csv</SSIS:Property>
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\resources\RawData.csv</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -227,6 +206,48 @@
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value">Dsn=dw;pwd=Forever2@;uid=hank0720</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="DataProfiling">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{e3673e4c-70d4-49fc-bd80-0f188433cff8}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Data Profiling</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\Data Profiling.txt</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="DataLog">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{5a7013af-823f-426c-b99c-e15c74cc6cbc}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description">Data log</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">C:\Users\Admin\Desktop\Project_Group1_education-Group02\src\Integration Services Project10\DataLog</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
