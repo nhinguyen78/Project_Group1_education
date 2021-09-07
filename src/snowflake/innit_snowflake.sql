@@ -1,3 +1,4 @@
+--Create tables
 CREATE OR REPLACE TABLE DIM_COURSE(
     Course_ID INT NOT NULL,
     Course_Name varchar(50)
@@ -9,7 +10,7 @@ CREATE OR REPLACE TABLE DIM_INSTRUCTOR(
     Instructor_Name varchar(50)
   );
   
-
+--Create Table
 CREATE OR REPLACE TABLE DIM_STUDENT(
     Student_ID int NOT NULL,
 	Student_Name varchar(50),
@@ -37,3 +38,4 @@ CREATE OR REPLACE TABLE FACTTRANSACTION(
 	Instructor_ID int NOT NULL,
 	Student_ID int NOT NULL
   );
+
