@@ -2,6 +2,12 @@
 <DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
   <ProfileVersion>1.0</ProfileVersion>
   <DataSources>
+    <DtsDataSource ID="{80C89098-C0D6-42E1-AB2A-CC1495E2E3D7}" Name="DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData">
+      <DtsConnectionManagerID>DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{51AFBAC5-6E44-4C5F-9E77-DC9E01114CBD}" Name="DESKTOP-LONCI57.EducationData 1">
+      <DtsConnectionManagerID>DESKTOP-LONCI57.EducationData 1</DtsConnectionManagerID>
+    </DtsDataSource>
     <DtsDataSource ID="{97BA57DB-9F32-4765-9392-535DC4F4E339}" Name="CourseAudit">
       <DtsConnectionManagerID>CourseAudit</DtsConnectionManagerID>
     </DtsDataSource>

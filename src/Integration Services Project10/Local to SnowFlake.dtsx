@@ -7,14 +7,26 @@
   DTS:CreatorName="DESKTOP-LONCI57\Admin"
   DTS:DTSID="{43C29812-DF7A-4A70-8C03-8D14AA25AF98}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="84"
-  DTS:VersionGUID="{022CDB0B-9FC1-4728-B011-BCEB1E9AB34E}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{9496178B-89E6-4D32-8029-A89701A50288}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dw]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{D4E0350B-4A05-4405-9653-E7AF5158B6CB}"
+      DTS:ObjectName="dw">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Dsn=dw;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -23,7 +35,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Executetable">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\17737\AppData\Local\Programs\Python\Python39\python.exe</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -46,7 +58,7 @@
         DTS:DataType="8"> Hi Team,
 
 
-The Package Package1 has failed from DESKTOP-LONCI57
+The Package Package1 has failed from DESKTOP-5EO5NDK
 
 
 Please check Error Logs or contact us for further information
@@ -126,7 +138,7 @@ Dev Team</DTS:VariableValue>
       DTS:Namespace="User"
       DTS:ObjectName="WorkingDirectory">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Rest API</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\17737\Desktop\FPT\Project_Group1_education-Group02\src\Rest API</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -159,9 +171,9 @@ Dev Team</DTS:VariableValue>
             DTS:Name="WorkingDirectory">@[User::WorkingDirectory]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
-              Executable="C:\Users\Admin\AppData\Local\Programs\Python\Python39\python.exe"
+              Executable="C:\Users\17737\AppData\Local\Programs\Python\Python39\python.exe"
               Arguments="main.py"
-              WorkingDirectory="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\Rest API" />
+              WorkingDirectory="C:\Users\17737\Desktop\FPT\Project_Group1_education-Group02\src\Rest API" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -173,13 +185,15 @@ Dev Team</DTS:VariableValue>
           DTS:LocaleID="-1"
           DTS:ObjectName="upload to Snowflake"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
+          <DTS:PropertyExpression
+            DTS:Name="Executable">@[$Project::ConnectionBatch]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
-              Executable="C:\Users\Admin\Desktop\Project_Group1_education-SSIS-Update\src\snowsql\snowPut.bat" />
+              Executable="C:\Users\17737\Desktop\FPT\Project_Group1_education-Group02\src\snowsql\snowPut.bat" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -188,12 +202,13 @@ Dev Team</DTS:VariableValue>
       DTS:refId="Package\Data Profiling Task"
       DTS:CreationName="Microsoft.DataProfilingTask"
       DTS:Description="Data Profiling Task"
+      DTS:Disabled="True"
       DTS:DTSID="{7d702f6e-3a89-40be-ab9f-abd5ad2791ad}"
       DTS:ExecutableType="Microsoft.DataProfilingTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Profiling Task"
       DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <DataProfilingTaskData
@@ -5932,7 +5947,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{440174A1-A660-4D47-878C-83692544148D}"
-                  SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-LONCI57', 'Package1', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-5EO5NDK', 'Package1', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -5953,57 +5968,61 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="178,42"
+          Size="183,42"
           Id="Package\Automation Rest API\Run Python Rest API"
           TopLeft="20.5,109.612303053371" />
         <NodeLayout
-          Size="173.5,42"
+          Size="178,42"
           Id="Package\Automation Rest API\upload to Snowflake"
           TopLeft="23.017845839705,32.916666801191" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="205,206.5"
-          Size="205,249.5"
+          PanelSize="205,207"
+          Size="205,250"
           Id="Package\Automation Rest API"
-          TopLeft="567,295.083332520806" />
+          TopLeft="710.333333333331,258.416665854139" />
         <NodeLayout
-          Size="172,42"
+          Size="168,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="759.999999999997,85.9583329270697" />
+        <NodeLayout
+          Size="176,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse"
           TopLeft="26,27.7083332230233" />
         <NodeLayout
-          Size="181.5,42"
+          Size="182,42"
           Id="Package\Load Data to Snowflake\Loading DimInstructor"
           TopLeft="223,26.7916657761154" />
         <NodeLayout
-          Size="155.5,42"
+          Size="156,42"
           Id="Package\Load Data to Snowflake\Loading Student"
           TopLeft="131,118.666665816473" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="448.5,215.5"
-          Size="448.5,258.5"
+          PanelSize="448,215"
+          Size="448,258"
           Id="Package\Load Data to Snowflake"
-          TopLeft="33,71.4999996448552" />
+          TopLeft="176.333333333333,34.8333329781886" />
         <NodeLayout
-          Size="139.5,42"
+          Size="140,42"
           Id="Package\Loading Fact"
-          TopLeft="182,396.499998030563" />
+          TopLeft="325.333333333333,359.833331363896" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="254.5,329.999999644855">
+          TopLeft="397.833333333333,292.833332978189">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66.4999983857081"
+              EndConnector="0,66.9999983857074"
               Start="0,0"
-              End="0,58.9999983857081">
+              End="0,59.4999983857074">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.9999983857081" />
+                    End="0,59.4999983857074" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6014,18 +6033,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="321.5,418.666665275685">
+          TopLeft="465.333333333333,382.124998609018">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="245.5,0"
+              EndConnector="244.999999999997,0"
               Start="0,0"
-              End="238,0">
+              End="237.499999999997,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="238,0" />
+                    End="237.499999999997,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6034,10 +6053,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="167.5,42"
-          Id="Package\Data Profiling Task"
-          TopLeft="570,139.291666260403" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6074,7 +6089,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading DimCourse\Sort 1"
           TopLeft="581.142857142857,197" />
         <NodeLayout
-          Size="120.5,42"
+          Size="120,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse\Stagging"
           TopLeft="428.571428571429,479.285714285714" />
         <NodeLayout
@@ -6090,7 +6105,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading DimCourse\DWHouse"
           TopLeft="154.285714285714,424.285714285714" />
         <NodeLayout
-          Size="98.5,42"
+          Size="98,42"
           Id="Package\Load Data to Snowflake\Loading DimCourse\Sort"
           TopLeft="253.642857142857,193.5" />
         <NodeLayout
@@ -6132,7 +6147,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6154,7 +6171,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6176,7 +6195,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6198,7 +6219,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6304,7 +6327,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6372,7 +6397,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading DimInstructor\Sort 1"
           TopLeft="583,178.5" />
         <NodeLayout
-          Size="120.5,42"
+          Size="120,42"
           Id="Package\Load Data to Snowflake\Loading DimInstructor\Stagging"
           TopLeft="428.571428571429,479.285714285714" />
         <NodeLayout
@@ -6388,7 +6413,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading DimInstructor\DWHouse"
           TopLeft="154.285714285714,424.285714285714" />
         <NodeLayout
-          Size="98.5,42"
+          Size="98,42"
           Id="Package\Load Data to Snowflake\Loading DimInstructor\Sort"
           TopLeft="255.5,177" />
         <NodeLayout
@@ -6396,7 +6421,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading DimInstructor\Conditional Split"
           TopLeft="383.5,367" />
         <NodeLayout
-          Size="141.5,42"
+          Size="142,42"
           Id="Package\Load Data to Snowflake\Loading DimInstructor\DimInstructor"
           TopLeft="237.47619047619,88.6666666666667" />
         <EdgeLayout
@@ -6430,7 +6455,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6452,7 +6479,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6474,7 +6503,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6496,7 +6527,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6602,7 +6635,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6666,7 +6701,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="120.5,42"
+          Size="120,42"
           Id="Package\Load Data to Snowflake\Loading Student\Stagging"
           TopLeft="428.571428571429,479.285714285714" />
         <NodeLayout
@@ -6694,7 +6729,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Load Data to Snowflake\Loading Student\DWHouse"
           TopLeft="154.285714285714,424.285714285714" />
         <NodeLayout
-          Size="98.5,42"
+          Size="98,42"
           Id="Package\Load Data to Snowflake\Loading Student\Sort"
           TopLeft="253.5,181" />
         <EdgeLayout
@@ -6764,7 +6799,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6798,7 +6835,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6820,7 +6859,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6842,7 +6883,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6864,7 +6907,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -6962,13 +7007,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package\Loading Fact">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Loading Fact\Flat File Destination"
           TopLeft="166.923076923077,212.307692307692" />
         <NodeLayout
-          Size="128.5,42"
+          Size="128,42"
           Id="Package\Loading Fact\Fact Table"
           TopLeft="189.230769230769,81.5384615384615" />
         <EdgeLayout
@@ -6990,7 +7035,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
