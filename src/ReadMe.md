@@ -8,24 +8,46 @@
 	 * [ssisPut.sql](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/RunFile/ssisPut.sql "ssisPut.sql"): Put file from local to stage Snowflake. 
 ## Step 1: Creating ODBC Connection 
 - Down ODBC Driver from Snowlfake Computing 
-- Create connection with DNS with these configuration:
+- Create 2 connections with DNS with these configurations:
+ + Connection 1: Data Warehouse
+	* Data Source: dw
 	* User: hank0720
+	* Password: Forever2@
 	* Server: cf43998.southeast-asia.azure.snowflakecomputing.com
 	* Database: EDUCATIONDATA
-	* Schema : DWHOUSE ( DatawareHouse ) and STAGGINGDWH (Stagging ) 
+	* Schema : DWHOUSE  
 	* Warehouse: COMPUTE_WH 
 	* Role: ACCOUNTADMIN
 	* Tracing: 4
+	
+ + Connection 2: Stagging
+ 	* Data Source: s1
+	* User: hank0720
+	* Password: Forever2@
+	* Server: cf43998.southeast-asia.azure.snowflakecomputing.com
+	* Database: EDUCATIONDATA
+	* Schema : STAGGINGDWH  
+	* Warehouse: COMPUTE_WH 
+	* Role: ACCOUNTADMIN
+	* Tracing: 4
+	
 ## Step 2: Config file Bat 
 - [config](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/snowsql/config "config"): Set up your config file `C:\Users\Admin\.snowsql\config` with the same ( you can   
 drag and drop for overwrite ) 
 - [snowPut.bat](https://github.com/nhinguyen78/Project_Group1_education/blob/Group02/src/snowsql/snowPut.bat "snowPut.bat") : `"C:\Program Files\Snowflake SnowSQL\snowsql" -c hank0720 -f C:\Users\Admin\Desktop\RunFile\ssisPut.sql` change suitable path file with C:\*\ is locate file ssisPut.sql 
 
-## Step 03: Parameter and Varaible in SSIS Project
+## Step 03: Setup Folder and Install Libraries for Python
+- Create a folder and name: `tmp`. Locate the foder in: `C:\`
+- Use the suitabke that you changed the path on your: `"C:\Users\17737\AppData\Local\Programs\Python\Python39\python.exe"` to open Command Prompt to create 2 libraries snowflake and snowflake.ingest as bellow:
+	* `python -m pip install snowflake`
+	* `python -m pip install snowflake.ingest`
+
+## Step 04: Parameter and Varaible in SSIS Project
 **Parameter**
 -  Connection: 
 	* Snowflake: Stagging and DW House 
 	* MSSQL connection 
+	* Batch connection
 - Audit Files: 
 	* CourseAudit
 	* InstructorAudit
