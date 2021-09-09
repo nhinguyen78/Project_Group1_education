@@ -7,15 +7,27 @@
   DTS:CreatorName="FSOFT.FPT.VN\NhiNTH1"
   DTS:DTSID="{6EEE4682-6F01-4C2D-B167-56F2984A9939}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="261"
-  DTS:VersionGUID="{98034113-3569-4019-AADE-658764095B64}">
+  DTS:VersionBuild="268"
+  DTS:VersionGUID="{C0BEF19B-4009-4D39-B239-0B5549BD26C6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{80C89098-C0D6-42E1-AB2A-CC1495E2E3D7}"
+      DTS:ObjectName="DESKTOP-5EO5NDK\MSSQLSERVER01.EducationData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-5EO5NDK\MSSQLSERVER01;Initial Catalog=EducationData;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-LONCI57.EducationData 1]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
@@ -61,7 +73,7 @@
         DTS:DataType="8"> Hi Team,
 
 
-The Package Package has failed from DESKTOP-LONCI57
+The Package Package has failed from DESKTOP-5EO5NDK
 
 
 Please check Error Logs or contact us for further information
@@ -534,12 +546,11 @@ Dev Team</DTS:VariableValue>
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Profiling Task"
       DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <DataProfilingTaskData
-          Destination="DataProfiling"
-          OverwriteDestination="True">
+          Destination="DataProfiling">
           <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
 <DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
   <ProfileVersion>1.0</ProfileVersion>
@@ -2682,16 +2693,16 @@ Dev Team</DTS:VariableValue>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Fact Transaction\Multicast.Outputs[Multicast Output 1]"
+                  refId="Package\Fact Transaction\Multicast.Outputs[Multicast Output 2]"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 1"
+                  name="Multicast Output 2"
                   synchronousInputId="Package\Fact Transaction\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Fact Transaction\Multicast.Outputs[Multicast Output 2]"
+                  refId="Package\Fact Transaction\Multicast.Outputs[Multicast Output 1]"
                   deleteOutputOnPathDetached="true"
-                  name="Multicast Output 2"
+                  name="Multicast Output 1"
                   synchronousInputId="Package\Fact Transaction\Multicast.Inputs[Multicast Input 1]">
                   <externalMetadataColumns />
                 </output>
@@ -9699,7 +9710,7 @@ Dev Team</DTS:VariableValue>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate FactTransaction Table"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:FilterKind="0" />
@@ -9719,13 +9730,13 @@ Dev Team</DTS:VariableValue>
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate tables"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:LoggingOptions
         DTS:FilterKind="0" />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{440174A1-A660-4D47-878C-83692544148D}"
+          SQLTask:Connection="{80C89098-C0D6-42E1-AB2A-CC1495E2E3D7}"
           SQLTask:BypassPrepare="False"
           SQLTask:SqlStatementSource="IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimCourse]') and TYPE = ( N'U'))&#xA;DELETE FROM DimCourse;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimStudent]') and TYPE = ( N'U'))&#xA;DELETE FROM DimStudent;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[DimInstructor]') and TYPE = ( N'U'))&#xA;DELETE FROM DimInstructor;&#xA;GO&#xA;&#xA;IF EXISTS ( SELECT 1 FROM sysobjects with ( nolock ) WHERE ID = OBJECT_ID(N'[TransactionData]') and TYPE = ( N'U'))&#xA;DELETE FROM TransactionData;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
@@ -10416,7 +10427,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{440174A1-A660-4D47-878C-83692544148D}"
-                  SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-LONCI57', 'Package', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="insert into Error_Logs values ('DESKTOP-5EO5NDK', 'Package', '', 0,'', getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -10437,9 +10448,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="168,42"
+          Id="Package\Data Profiling Task"
+          TopLeft="286.166666666667,192.111110077964" />
+        <NodeLayout
           Size="161,42"
           Id="Package\Fact Transaction"
-          TopLeft="437,429.166666655905" />
+          TopLeft="682.555555555551,430.277777767016" />
         <NodeLayout
           Size="192,42"
           Id="Package\LOAD from Raw Data\Load flat to DimCourses"
@@ -10462,41 +10477,41 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           PanelSize="466,238"
           Size="466,281"
           Id="Package\LOAD from Raw Data"
-          TopLeft="285.708334187046,32" />
+          TopLeft="523.486111964822,57.5555555555556" />
         <NodeLayout
           Size="228,42"
           Id="Package\Truncate FactTransaction Table"
-          TopLeft="405.416668001563,353.083333103027" />
+          TopLeft="652.083334668225,360.861110880804" />
         <NodeLayout
-          Size="152,42"
+          Size="155,42"
           Id="Package\Truncate tables"
-          TopLeft="47.1666677221656,78" />
+          TopLeft="284.944445499943,103.555555555556" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="199.166667722166,99">
+          TopLeft="439.944445499943,124.555555555556">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.5416664648803,73.5"
+              EndConnector="83.5416664648803,73.5"
               Start="0,0"
-              End="79.0416664648803,73.5">
+              End="76.0416664648803,73.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="39.2708332324402,0" />
+                    End="37.7708332324402,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.2708332324402,0"
-                    Point2="43.2708332324402,0"
-                    Point3="43.2708332324402,4" />
+                    Point1="37.7708332324402,0"
+                    Point2="41.7708332324402,0"
+                    Point3="41.7708332324402,4" />
                   <mssgle:LineSegment
-                    End="43.2708332324402,69.5" />
+                    End="41.7708332324402,69.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="43.2708332324402,69.5"
-                    Point2="43.2708332324402,73.5"
-                    Point3="47.2708332324402,73.5" />
+                    Point1="41.7708332324402,69.5"
+                    Point2="41.7708332324402,73.5"
+                    Point3="45.7708332324402,73.5" />
                   <mssgle:LineSegment
-                    End="79.0416664648803,73.5" />
+                    End="76.0416664648803,73.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10507,18 +10522,24 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="519.062501094304,313">
+          TopLeft="756.486111964822,338.555555555556">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.0833331030269"
+              EndConnector="123.597222703403,43.3055553252489"
               Start="0,0"
-              End="0,32.5833331030269">
+              End="116.097222703403,43.3055553252489">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5833331030269" />
+                    End="0,39.3055553252489" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.3055553252489"
+                    Point2="0,43.3055553252489"
+                    Point3="4,43.3055553252489" />
+                  <mssgle:LineSegment
+                    End="116.097222703403,43.3055553252489" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10529,18 +10550,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="518.458334000782,395.083333103027">
+          TopLeft="764.569445111888,402.861110880804">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,34.0833335528778"
+              EndConnector="0,27.4166668862114"
               Start="0,0"
-              End="0,26.5833335528778">
+              End="0,19.9166668862114">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5833335528778" />
+                    End="0,19.9166668862114" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10549,10 +10570,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="167.5,42"
-          Id="Package\Data Profiling Task"
-          TopLeft="78.5,246.999998966853" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10572,10 +10589,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="418.5,132"
-          Size="418.5,175"
+          PanelSize="418,132"
+          Size="418,175"
           Id="Package.EventHandlers[OnError]\Failure Logs and Send Mail"
-          TopLeft="152,96.7083331261658" />
+          TopLeft="465,85.7083331261658" />
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
@@ -10586,20 +10603,16 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="108,42"
-          Id="Package\Fact Transaction\Sort 4"
-          TopLeft="464.111111111111,312" />
+          Id="Package\Fact Transaction\Sort 5"
+          TopLeft="673,141" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Fact Transaction\Multicast"
+          TopLeft="736,326" />
         <NodeLayout
           Size="108,42"
-          Id="Package\Fact Transaction\Sort 2"
-          TopLeft="523,107" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Fact Transaction\Sort 1"
-          TopLeft="317,117" />
-        <NodeLayout
-          Size="142,42"
-          Id="Package\Fact Transaction\Merge Join 2"
-          TopLeft="687.222222222222,250" />
+          Id="Package\Fact Transaction\Sort 3"
+          TopLeft="255,291" />
         <NodeLayout
           Size="128,42"
           Id="Package\Fact Transaction\Fact Audit"
@@ -10610,138 +10623,48 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           TopLeft="501,30" />
         <NodeLayout
           Size="108,42"
-          Id="Package\Fact Transaction\Sort 3"
-          TopLeft="255,291" />
+          Id="Package\Fact Transaction\Sort 1"
+          TopLeft="317,117" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\Fact Transaction\Dim Transaction"
-          TopLeft="290,26" />
+          Size="142,42"
+          Id="Package\Fact Transaction\Merge Join 1"
+          TopLeft="407.222222222222,194.555555555556" />
         <NodeLayout
           Size="99,42"
           Id="Package\Fact Transaction\Sort"
           TopLeft="115,124" />
         <NodeLayout
-          Size="108,42"
-          Id="Package\Fact Transaction\Sort 5"
-          TopLeft="673,141" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Fact Transaction\Fact Transaction"
-          TopLeft="902,387" />
-        <NodeLayout
-          Size="123,42"
-          Id="Package\Fact Transaction\Multicast"
-          TopLeft="740,329" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Fact Transaction\Dim Student"
-          TopLeft="711,32" />
-        <NodeLayout
           Size="133,42"
           Id="Package\Fact Transaction\Merge Join"
           TopLeft="223,202" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Fact Transaction\Sort 4"
+          TopLeft="464.111111111111,312" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Fact Transaction\Merge Join 2"
+          TopLeft="687.222222222222,250" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Fact Transaction\Sort 2"
+          TopLeft="523,107" />
         <NodeLayout
           Size="137,42"
           Id="Package\Fact Transaction\Dim Course"
           TopLeft="68,25" />
         <NodeLayout
+          Size="159,42"
+          Id="Package\Fact Transaction\Dim Transaction"
+          TopLeft="290,26" />
+        <NodeLayout
           Size="104,42"
           Id="Package\Fact Transaction\Audit"
           TopLeft="673,395" />
         <NodeLayout
-          Size="142,42"
-          Id="Package\Fact Transaction\Merge Join 1"
-          TopLeft="407.222222222222,194.555555555556" />
-        <EdgeLayout
-          Id="Package\Fact Transaction.Paths[Merge Join Output1]"
-          TopLeft="500.555555555556,236.555555555556">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="17.5555555555555,75.4444444444445"
-              Start="0,0"
-              End="17.5555555555555,67.9444444444445">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.6821417517797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.6821417517797"
-                    Point2="0,30.6821417517797"
-                    Point3="4,30.6821417517797" />
-                  <mssgle:LineSegment
-                    End="13.5555555555555,30.6821417517797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.5555555555555,30.6821417517797"
-                    Point2="17.5555555555555,30.6821417517797"
-                    Point3="17.5555555555555,34.6821417517797" />
-                  <mssgle:LineSegment
-                    End="17.5555555555555,67.9444444444445" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Fact Transaction.Paths[Merge Join Output]"
-          TopLeft="290.916666666667,244">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Fact Transaction.Paths[Audit Output 1]"
-          TopLeft="725,437">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-50,27"
-              Start="0,0"
-              End="-50,19.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.5"
-                    Point2="0,13.5"
-                    Point3="-4,13.5" />
-                  <mssgle:LineSegment
-                    End="-46,13.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46,13.5"
-                    Point2="-50,13.5"
-                    Point3="-50,17.5" />
-                  <mssgle:LineSegment
-                    End="-50,19.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="139,42"
+          Id="Package\Fact Transaction\Dim Student"
+          TopLeft="711,32" />
         <EdgeLayout
           Id="Package\Fact Transaction.Paths[Sort Output5]"
           TopLeft="727,183">
@@ -11060,64 +10983,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Fact Transaction.Paths[Multicast Output 2]"
-          TopLeft="801.5,371">
+          TopLeft="797.5,368">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-76.5,24"
+              EndConnector="-72.5,27"
               Start="0,0"
-              End="-76.5,16.5">
+              End="-72.5,19.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8" />
+                    End="0,9.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8"
-                    Point2="0,12"
-                    Point3="-4,12" />
+                    Point1="0,9.5"
+                    Point2="0,13.5"
+                    Point3="-4,13.5" />
                   <mssgle:LineSegment
-                    End="-72.5,12" />
+                    End="-68.5,13.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-72.5,12"
-                    Point2="-76.5,12"
-                    Point3="-76.5,16" />
+                    Point1="-68.5,13.5"
+                    Point2="-72.5,13.5"
+                    Point3="-72.5,17.5" />
                   <mssgle:LineSegment
-                    End="-76.5,16.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Fact Transaction.Paths[Multicast Output 1]"
-          TopLeft="863,350">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="39,58"
-              Start="0,0"
-              End="31.5,58">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="15.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="15.5,0"
-                    Point2="19.5,0"
-                    Point3="19.5,4" />
-                  <mssgle:LineSegment
-                    End="19.5,54" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19.5,54"
-                    Point2="19.5,58"
-                    Point3="23.5,58" />
-                  <mssgle:LineSegment
-                    End="31.5,58" />
+                    End="-72.5,19.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11132,26 +11021,154 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="43.2777777777781,37"
+              EndConnector="39.2777777777781,34"
               Start="0,0"
-              End="43.2777777777781,29.5">
+              End="39.2777777777781,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5" />
+                    End="0,13" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5"
-                    Point2="0,18.5"
-                    Point3="4,18.5" />
+                    Point1="0,13"
+                    Point2="0,17"
+                    Point3="4,17" />
                   <mssgle:LineSegment
-                    End="39.2777777777781,18.5" />
+                    End="35.2777777777781,17" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.2777777777781,18.5"
-                    Point2="43.2777777777781,18.5"
-                    Point3="43.2777777777781,22.5" />
+                    Point1="35.2777777777781,17"
+                    Point2="39.2777777777781,17"
+                    Point3="39.2777777777781,21" />
                   <mssgle:LineSegment
-                    End="43.2777777777781,29.5" />
+                    End="39.2777777777781,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fact Transaction.Paths[Merge Join Output1]"
+          TopLeft="500.555555555556,236.555555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="17.5555555555555,75.4444444444445"
+              Start="0,0"
+              End="17.5555555555555,67.9444444444445">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.6821417517797" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.6821417517797"
+                    Point2="0,30.6821417517797"
+                    Point3="4,30.6821417517797" />
+                  <mssgle:LineSegment
+                    End="13.5555555555555,30.6821417517797" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.5555555555555,30.6821417517797"
+                    Point2="17.5555555555555,30.6821417517797"
+                    Point3="17.5555555555555,34.6821417517797" />
+                  <mssgle:LineSegment
+                    End="17.5555555555555,67.9444444444445" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fact Transaction.Paths[Merge Join Output]"
+          TopLeft="290.916666666667,244">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fact Transaction.Paths[Audit Output 1]"
+          TopLeft="725,437">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-50,27"
+              Start="0,0"
+              End="-50,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.5"
+                    Point2="0,13.5"
+                    Point3="-4,13.5" />
+                  <mssgle:LineSegment
+                    End="-46,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-46,13.5"
+                    Point2="-50,13.5"
+                    Point3="-50,17.5" />
+                  <mssgle:LineSegment
+                    End="-50,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Fact Transaction\Fact Transaction"
+          TopLeft="854,418" />
+        <EdgeLayout
+          Id="Package\Fact Transaction.Paths[Multicast Output 1]"
+          TopLeft="816.666666666667,368">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.833333333333,50"
+              Start="0,0"
+              End="117.833333333333,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3852327447833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3852327447833"
+                    Point2="0,20.3852327447833"
+                    Point3="4,20.3852327447833" />
+                  <mssgle:LineSegment
+                    End="113.833333333333,20.3852327447833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113.833333333333,20.3852327447833"
+                    Point2="117.833333333333,20.3852327447833"
+                    Point3="117.833333333333,24.3852327447833" />
+                  <mssgle:LineSegment
+                    End="117.833333333333,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11177,7 +11194,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Fact Transaction\Dim Transaction">
+    design-time-name="Package\Fact Transaction\Dim Course">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11190,7 +11207,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Fact Transaction\Fact Transaction">
+    design-time-name="Package\Fact Transaction\Dim Transaction">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11215,24 +11232,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Fact Transaction\Dim Course">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\LOAD from Raw Data\Load flat to DimCourses">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="206,46"
           Id="Package\LOAD from Raw Data\Load flat to DimCourses\DIM COURSE"
@@ -11242,13 +11246,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data\Load flat to DimCourses\Remove Duplicate"
           TopLeft="183,129" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimCourses\RawData"
-          TopLeft="122,32" />
-        <NodeLayout
           Size="139.5,42"
           Id="Package\LOAD from Raw Data\Load flat to DimCourses\Course Audit"
           TopLeft="111,363" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimCourses\RawData"
+          TopLeft="122,32" />
         <NodeLayout
           Size="104,42"
           Id="Package\LOAD from Raw Data\Load flat to DimCourses\Audit"
@@ -11288,7 +11292,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11322,7 +11328,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11356,7 +11364,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11390,7 +11400,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11424,7 +11436,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11457,6 +11471,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor\DIM INSTRUCTOR"
           TopLeft="501,369" />
         <NodeLayout
+          Size="124,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimInstructor\RawData"
+          TopLeft="175,54" />
+        <NodeLayout
           Size="104,42"
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor\Audit"
           TopLeft="198,378" />
@@ -11465,17 +11483,81 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor\Multicast"
           TopLeft="330,314" />
         <NodeLayout
-          Size="169,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimInstructor\Remove Duplicate"
-          TopLeft="288,230" />
-        <NodeLayout
           Size="128,42"
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor\Aggregate"
           TopLeft="180,138" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimInstructor\RawData"
-          TopLeft="175,54" />
+          Size="169,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimInstructor\Remove Duplicate"
+          TopLeft="288,230" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimInstructor.Paths[Sort Output]"
+          TopLeft="372.5,272">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19,42"
+              Start="0,0"
+              End="19,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="15,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15,21"
+                    Point2="19,21"
+                    Point3="19,25" />
+                  <mssgle:LineSegment
+                    End="19,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimInstructor.Paths[Multicast Output 2]"
+          TopLeft="330,335">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28,64"
+              Start="0,0"
+              End="-20.5,64">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-10,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10,0"
+                    Point2="-14,0"
+                    Point3="-14,4" />
+                  <mssgle:LineSegment
+                    End="-14,60" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14,60"
+                    Point2="-14,64"
+                    Point3="-18,64" />
+                  <mssgle:LineSegment
+                    End="-20.5,64" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimInstructor.Paths[Multicast Output 1]"
           TopLeft="453,335">
@@ -11600,74 +11682,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\LOAD from Raw Data\Load flat to DimInstructor.Paths[Sort Output]"
-          TopLeft="372.5,272">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="19,42"
-              Start="0,0"
-              End="19,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17"
-                    Point2="0,21"
-                    Point3="4,21" />
-                  <mssgle:LineSegment
-                    End="15,21" />
-                  <mssgle:CubicBezierSegment
-                    Point1="15,21"
-                    Point2="19,21"
-                    Point3="19,25" />
-                  <mssgle:LineSegment
-                    End="19,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\LOAD from Raw Data\Load flat to DimInstructor.Paths[Multicast Output 2]"
-          TopLeft="330,335">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-28,64"
-              Start="0,0"
-              End="-20.5,64">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-10,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10,0"
-                    Point2="-14,0"
-                    Point3="-14,4" />
-                  <mssgle:LineSegment
-                    End="-14,60" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-14,60"
-                    Point2="-14,64"
-                    Point3="-18,64" />
-                  <mssgle:LineSegment
-                    End="-20.5,64" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -11698,9 +11712,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\Slowly Changing Dimension"
           TopLeft="205.75,209.5" />
         <NodeLayout
+          Size="177,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1"
+          TopLeft="455.25,311.5" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command"
+          TopLeft="226.5,311.5" />
+        <NodeLayout
           Size="124,42"
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\RawData"
           TopLeft="248.75,5.49999999999989" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Insert Destination"
+          TopLeft="5.5,311.5" />
         <NodeLayout
           Size="104,42"
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\Audit"
@@ -11709,6 +11735,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="169,42"
           Id="Package\LOAD from Raw Data\Load flat to DimStudent\Remove Duplicate"
           TopLeft="226.25,107.5" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Unchanged Output]"
+          TopLeft="415.75,230.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="298,0"
+              Start="0,0"
+              End="290.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="290.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="103.04966796875,5,84.4006640625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Sort Output]"
           TopLeft="310.75,149.5">
@@ -11731,54 +11781,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Flat File Source Output]"
-          TopLeft="310.75,47.4999999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Audit Output 1]"
-          TopLeft="765.75,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="160.5,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent\Insert Destination"
-          TopLeft="5.5,311.5" />
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[New Output]"
           TopLeft="260.25,251.5">
@@ -11815,10 +11817,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168.5,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command"
-          TopLeft="226.5,311.5" />
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Inferred Member Updates Output]"
           TopLeft="310.75,251.5">
@@ -11843,10 +11841,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent\OLE DB Command 1"
-          TopLeft="455.25,311.5" />
+        <EdgeLayout
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Flat File Source Output]"
+          TopLeft="310.75,47.4999999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Changing Attribute Updates Output]"
           TopLeft="361.25,251.5">
@@ -11884,27 +11900,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Unchanged Output]"
-          TopLeft="415.75,230.5">
+          Id="Package\LOAD from Raw Data\Load flat to DimStudent.Paths[Audit Output 1]"
+          TopLeft="765.75,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="298,0"
+              EndConnector="0,60"
               Start="0,0"
-              End="290.5,0">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="290.5,0" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="103.04966796875,5,84.4006640625,11.6630859375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11994,7 +12008,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package\LOAD from Raw Data\Load Transaction Flat file">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="165,42"
           Id="Package\LOAD from Raw Data\Load Transaction Flat file\Transaction Audit"
@@ -12054,7 +12068,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12082,7 +12098,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12116,7 +12134,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12150,7 +12170,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12184,7 +12206,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12218,7 +12242,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
