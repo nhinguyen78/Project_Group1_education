@@ -36,4 +36,4 @@ Use for trainer 2: mainq
 Password: password123
 
 4. Link to PowerBI Visualization
-Please click [PowerBI](https://app.powerbi.com/links/KYQFR6vdFi?ctid=750d3a3f-1f46-4da2-8a64-7605e75ea2f9&pbi_source=linkShare)
+Please click [PowerBI](https://app.powerbi.com/links/sSEb4dRLaw?ctid=f01e930a-b52e-42b1-b70f-a8882b5d043b&pbi_source=linkShare)
